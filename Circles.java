@@ -15,7 +15,7 @@ public class Circles extends GraphicsProgram {
 		for (int i = 0; i < NUM_CIRCLES; i++){
 			
 			// Variables
-			int d = rgen.nextInt(5, 50);
+			int d = rgen.nextInt(10, 100);
 			int x = rgen.nextInt(d/2, getWidth()-d/2);
 			int y = rgen.nextInt(d/2, getHeight()-d/2);
 			
