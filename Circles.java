@@ -8,23 +8,25 @@ import acm.graphics.*;
 
 public class Circles extends GraphicsProgram {
 
+	private static final int NUM_CIRCLES = 10;
+	
 	public void run() {
 			
-		for (int i = 0; i < 10; i++){
+		for (int i = 0; i < NUM_CIRCLES; i++){
 			
 			// Variables
+			int d = rgen.nextInt(5, 50);
 			int x = rgen.nextInt(0, getWidth());
 			int y = rgen.nextInt(0, getHeight());
-			int r = rgen.nextInt(5, 50);
 			
-			add(randomCircle(x, y, r, rgen.nextColor()));
+			add(randomCircle(x, y, d, rgen.nextColor()));
 		}
 
 	}
 	
 	
-	private GOval randomCircle(int x, int y, int r, Color color){ 
-		GOval circle = new GOval(x+r,y-r,2*r,2*r);
+	private GOval randomCircle(int x, int y, int d, Color color){ 
+		GOval circle = new GOval(x,y,d,d);
 		circle.setFilled(true);
 		circle.setColor(color);
 		return circle;
