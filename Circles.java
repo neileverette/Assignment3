@@ -9,14 +9,14 @@ import acm.graphics.*;
 public class Circles extends GraphicsProgram {
 
 	public void run() {
-		
-		// Variables
-		int x = rgen.nextInt(0, getWidth());
-		int y = rgen.nextInt(0, getHeight());
-		int r = rgen.nextInt(5, 50);
-				
-		
+			
 		for (int i = 0; i < 10; i++){
+			
+			// Variables
+			int x = rgen.nextInt(0, getWidth());
+			int y = rgen.nextInt(0, getHeight());
+			int r = rgen.nextInt(5, 50);
+			
 			add(randomCircle(x, y, r, Color.RED));
 		}
 
