@@ -16,8 +16,8 @@ public class Circles extends GraphicsProgram {
 			
 			// Variables
 			int r = rgen.nextInt(5, 50);
-			int x = rgen.nextInt(0, getWidth()- r);
-			int y = rgen.nextInt(0, getHeight()- r);
+			int x = rgen.nextInt(r, getWidth()- r);
+			int y = rgen.nextInt(0, getHeight()- 2*r);
 			
 			add(randomCircle(x, y, r, rgen.nextColor()));
 		}
