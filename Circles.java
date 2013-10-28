@@ -15,8 +15,10 @@ public class Circles extends GraphicsProgram {
 		int y = rgen.nextInt(0, getHeight());
 		int r = rgen.nextInt(5, 50);
 				
-		add(randomCircle(x, y, r, Color.RED));
-
+		
+		for (int i = 0; i < 10; i++){
+			add(randomCircle(x, y, r, Color.RED));
+		}
 
 	}
 	
