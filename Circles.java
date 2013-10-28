@@ -15,18 +15,18 @@ public class Circles extends GraphicsProgram {
 		for (int i = 0; i < NUM_CIRCLES; i++){
 			
 			// Variables
-			int d = rgen.nextInt(10, 100);
-			int x = rgen.nextInt(d/2, getWidth()-d/2);
-			int y = rgen.nextInt(d/2, getHeight()-d/2);
+			int r = rgen.nextInt(5, 50);
+			int x = rgen.nextInt(r, getWidth()-r);
+			int y = rgen.nextInt(r, getHeight()-r);
 			
-			add(randomCircle(x, y, d, rgen.nextColor()));
+			add(randomCircle(x, y, r, rgen.nextColor()));
 		}
 
 	}
 	
 	
-	private GOval randomCircle(int x, int y, int d, Color color){ 
-		GOval circle = new GOval(x,y,d,d);
+	private GOval randomCircle(int x, int y, int r, Color color){ 
+		GOval circle = new GOval(x,y,2*r,2*r);
 		circle.setFilled(true);
 		circle.setColor(color);
 		return circle;
