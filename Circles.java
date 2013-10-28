@@ -24,7 +24,7 @@ public class Circles extends GraphicsProgram {
 	
 	
 	private GOval randomCircle(int x, int y, int r, Color color){ 
-		GOval circle = new GOval(x-r,y-r,2*r,2*r);
+		GOval circle = new GOval(x+r,y-r,2*r,2*r);
 		circle.setFilled(true);
 		circle.setColor(color);
 		return circle;
