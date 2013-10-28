@@ -1,12 +1,17 @@
 
-public class Circles {
+import acm.program.ConsoleProgram;
+import acm.program.GraphicsProgram;
+import acm.util.*;
+import acm.graphics.*;
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class Circles extends ConsoleProgram {
+
+	public void run() {
+		
+		for (int i = 0; i < 10; i++){
+			println(rgen);
+		}
 
 	}
-
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 }
