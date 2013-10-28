@@ -8,7 +8,7 @@ import acm.graphics.*;
 
 public class Circles extends GraphicsProgram {
 
-	private static final int NUM_CIRCLES = 10000;
+	private static final int NUM_CIRCLES = 10;
 	
 	public void run() {
 			
@@ -16,6 +16,7 @@ public class Circles extends GraphicsProgram {
 			
 			// Variables
 			int r = rgen.nextInt(5, 50);
+			
 			int x = rgen.nextInt(0, getWidth()- 2*r);
 			int y = rgen.nextInt(0, getHeight()- 2*r);
 			
