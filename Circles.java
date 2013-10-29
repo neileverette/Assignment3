@@ -31,5 +31,7 @@ public class Circles extends GraphicsProgram {
 		return circle;
 	}
 	
+	
+	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 }
