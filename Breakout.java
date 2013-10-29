@@ -70,6 +70,7 @@ public class Breakout extends GraphicsProgram {
 		for (int i = 0; i < NBRICKS_PER_ROW; i++){
 			for(int j = 0; j < NBRICK_ROWS; j++ ){
 				GRect brick = new GRect(10,20, BRICK_HEIGHT, BRICK_HEIGHT );
+				add(brick);
 			}
 		}
 	}
