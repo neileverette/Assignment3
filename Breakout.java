@@ -63,6 +63,8 @@ public class Breakout extends GraphicsProgram {
 		gameSetup();
 		
 		
+		// Must call this method to be able to get mouse events 
+		addMouseListeners(); 
 	}
 	
 	// Sets up the game
@@ -96,7 +98,6 @@ public class Breakout extends GraphicsProgram {
 			}
 		}
 	}
-
 	
 	// Paddle
 	private void createPaddle(){
@@ -108,4 +109,5 @@ public class Breakout extends GraphicsProgram {
 		paddle.setColor(Color.GRAY);
 		add(paddle);
 	}
+
 }
