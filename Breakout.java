@@ -63,6 +63,9 @@ public class Breakout extends GraphicsProgram {
 		gameSetup();
 		
 		
+		GLabel label = new GLabel ("hello world", 100, 75);
+		add (label);
+		
 		// Must call this method to be able to get mouse events 
 		addMouseListeners(); 
 	}
@@ -101,6 +104,8 @@ public class Breakout extends GraphicsProgram {
 	
 	// Paddle
 	private void createPaddle(){
+		
+		// Set the initial placement of the paddle
 		int paddleX = getWidth()/2 - PADDLE_WIDTH/2;
 		int paddleY = getHeight()-PADDLE_HEIGHT-PADDLE_Y_OFFSET;
 		
@@ -110,4 +115,6 @@ public class Breakout extends GraphicsProgram {
 		add(paddle);
 	}
 
+
+	
 }
