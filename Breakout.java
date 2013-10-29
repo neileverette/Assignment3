@@ -62,7 +62,7 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		gameSetup();
 		
-		label("Hello World", getX(), 200);
+		label("Hello World", 200, 200);
 		
 		// Must call this method to be able to get mouse events 
 		addMouseListeners(); 
