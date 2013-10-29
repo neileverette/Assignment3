@@ -105,7 +105,7 @@ public class Breakout extends GraphicsProgram {
 		
 		GRect paddle = new GRect(paddleX, paddleY,PADDLE_WIDTH, PADDLE_HEIGHT );
 		paddle.setFilled(true);
-		paddle.setColor(Color.BLACK);
+		paddle.setColor(Color.GRAY);
 		add(paddle);
 	}
 }
