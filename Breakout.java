@@ -71,7 +71,7 @@ public class Breakout extends GraphicsProgram {
 		createPaddle();
 	}
 	
-	// This method creates the bricks for the game
+	// Loads the Bricks
 	private void createBricks(){
 		
 		for (int i = 0; i < NBRICKS_PER_ROW; i++){
