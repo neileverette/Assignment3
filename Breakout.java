@@ -60,11 +60,18 @@ public class Breakout extends GraphicsProgram {
 /* Method: run() */
 /** Runs the Breakout program. */
 	public void run() {
-		/* You fill this in, along with any subsidiary methods */
-		createBricks();
+		gameSetup();
+		
 		
 	}
 	
+	// Sets up the game
+	private void gameSetup(){
+		createBricks();
+		createPaddle();
+	}
+	
+	// This method creates the bricks for the game
 	private void createBricks(){
 		
 		for (int i = 0; i < NBRICKS_PER_ROW; i++){
@@ -90,4 +97,15 @@ public class Breakout extends GraphicsProgram {
 		}
 	}
 
+	
+	// Paddle
+	private void createPaddle(){
+		int paddleX = getWidth()/2;
+		int paddleY = getHeight()-PADDLE_HEIGHT-PADDLE_Y_OFFSET;
+		
+		GRect paddle = new GRect(paddleX, paddleY,PADDLE_WIDTH, PADDLE_HEIGHT );
+		paddle.setFilled(true);
+		paddle.setColor(Color.BLACK);
+		add(paddle);
+	}
 }
