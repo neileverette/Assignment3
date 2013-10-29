@@ -115,6 +115,7 @@ public class Breakout extends GraphicsProgram {
 	
 	private GLabel label(String str, double x, double y){
 		GLabel myLabel = new GLabel(str, x, y);
+		myLabel.setFont("Helvetica-36");
 		add(myLabel);
 		return myLabel;
 	}
