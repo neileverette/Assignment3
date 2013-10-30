@@ -113,9 +113,10 @@ public class Breakout extends GraphicsProgram {
 		add(paddle);
 	}
 	
-	private GLabel label(String str, double x, double y){
+	private GLabel label(String str, double x, double y, MouseEvent e){
 		GLabel myLabel = new GLabel(str, x, y);
 		myLabel.setFont("Helvetica-36");
+		myLabel.setLabel("Mouse " +  e.getX());
 		add(myLabel);
 		return myLabel;
 	}
