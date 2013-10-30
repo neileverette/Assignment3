@@ -15,6 +15,9 @@ public class MouseTracker extends GraphicsProgram {
  label.setFont("Times New Roman-36"); 
  add(label, 50, 50); 
  
+ circle = new GOval(10,10, 30, 30);
+ add(circle);
+ 
  
  // Must call this method to be able to get mouse events 
  addMouseListeners(); 
@@ -29,5 +32,6 @@ public class MouseTracker extends GraphicsProgram {
  /* Private instance variable */ 
  private GLabel label; 
  
+ private GOval circle;
 
 } 
