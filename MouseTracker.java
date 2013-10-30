@@ -16,6 +16,7 @@ public class MouseTracker extends GraphicsProgram {
  add(label, 50, 50); 
  
  circle = new GOval(10,10, 30, 30);
+ circle.setFilled(true);
  add(circle);
  
  
