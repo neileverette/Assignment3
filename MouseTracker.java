@@ -32,6 +32,7 @@ public class MouseTracker extends GraphicsProgram {
  
  public GLabel myLabel(String str, double x, double y){
 	 GLabel myLabel = new GLabel(str, x, y);
+	 add(myLabel);
 	 return myLabel;
  }
 } 
