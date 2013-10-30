@@ -22,6 +22,7 @@ public class MouseTracker extends GraphicsProgram {
  // This method is called everytime user moves mouse 
  public void mouseMoved(MouseEvent e) { 
  label.setLabel("Mouse: (" + e.getX() + ", " + e.getY() + ")"); 
+ label.setLocation(e.getX(), e.getY());
  } 
  
  /* Private instance variable */ 
