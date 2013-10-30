@@ -63,7 +63,7 @@ public class Breakout extends GraphicsProgram {
 		gameSetup();
 		
 		// Temporary Label
-		label = new GLabel("Hello World", getWidth()-label.getWidth(), getHeight()-200);
+		label = new GLabel("Hello World", getWidth()-200, getHeight()-200);
 		add(label);
 		
 		// Must call this method to be able to get mouse events 
