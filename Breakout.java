@@ -62,7 +62,8 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		gameSetup();
 		
-		label("Hello World", getWidth()/2 ,getHeight()/2);
+		label = new GLabel("Hello World", 200, 200);
+		add(label);
 		
 		// Must call this method to be able to get mouse events 
 		addMouseListeners(); 
@@ -112,14 +113,20 @@ public class Breakout extends GraphicsProgram {
 		paddle.setColor(Color.GRAY);
 		add(paddle);
 	}
+ 
 	
-	private GLabel label(String str, double x, double y){
+	public GLabel label(String str, double x, double y){
 		GLabel myLabel = new GLabel(str, x, y);
 		myLabel.setFont("Helvetica-36");
 		//myLabel.setLabel("Mouse " +  e.getX());
 		add(myLabel);
 		return myLabel;
-	}
-
+	}	
 	
+	// This method is called everytime user moves mouse 
+	public void mouseMoved(MouseEvent e) { 
+		label.setLabel("Mouse: (" + e.getX() + ", " + e.getY() + ")"); 
+	 }
+	
+	private GLabel label;
 }
