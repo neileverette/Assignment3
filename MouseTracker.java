@@ -15,7 +15,6 @@ public class MouseTracker extends GraphicsProgram {
  label.setFont("Times New Roman-36"); 
  add(label, 50, 50); 
  
- myLabel("Hello World 2", 200, 200);
  
  // Must call this method to be able to get mouse events 
  addMouseListeners(); 
