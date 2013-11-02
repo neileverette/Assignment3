@@ -32,7 +32,8 @@ public class MouseTracker extends GraphicsProgram {
  } 
  
  public void circleMoved(MouseEvent e){
-	 circle.setLocation(e.getX(), e.getY());
+	 circle.move(e.getX(), e.getY());
+
  }
  
  /* Private instance variable */ 
