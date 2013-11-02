@@ -119,7 +119,7 @@ public class Breakout extends GraphicsProgram {
 	
 	// This method is called everytime user moves mouse 
 	public void mouseMoved(MouseEvent e) { 
-		paddle.setLocation(e.getX(), e.getY());
+		paddle.setLocation(e.getX(), paddle.getY());
 	 }
 	
 	
