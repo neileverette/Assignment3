@@ -30,7 +30,7 @@ public void run() {
  // This method is called everytime user moves mouse 
  public void mouseMoved(MouseEvent e) { 
 	 label.setLabel("Mouse: (" + e.getX() + ", " + e.getY() + ")"); 
-	 circle.setLocation(e.getX()-circle.getWidth(), e.getY()+circle.getHeight());
+	 circle.setLocation(e.getX()+circle.getWidth()/2, e.getY()+circle.getHeight()/2);
  } 
  
  /* Private instance variable */ 
