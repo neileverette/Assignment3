@@ -10,13 +10,17 @@ import java.awt.event.*;
  
 public class MouseTracker extends GraphicsProgram { 
  
- public void run() { 
+ private int circleRadius);
+
+public void run() { 
+	 
+	 int circleRadius = 15;
  
 	 label = new GLabel(""); 
 	 label.setFont("Times New Roman-36"); 
 	 add(label, 50, 50); 
  
-	 circle = new GOval(10,10, 30, 30);
+	 circle = new GOval(10,10, circleRadius*2, circleRadius*2);
 	 circle.setFilled(true);
 	 add(circle);
  
@@ -28,7 +32,7 @@ public class MouseTracker extends GraphicsProgram {
  // This method is called everytime user moves mouse 
  public void mouseMoved(MouseEvent e) { 
 	 label.setLabel("Mouse: (" + e.getX() + ", " + e.getY() + ")"); 
-	 circle.setLocation(e.getX(), e.getY());
+	 circle.setLocation((e.getX()-circleRadius) , e.getY());
  } 
  
  /* Private instance variable */ 
