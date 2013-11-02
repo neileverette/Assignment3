@@ -57,14 +57,16 @@ public class Breakout extends GraphicsProgram {
 /** Number of turns */
 	private static final int NTURNS = 3;
 
-/* Method: run() */
+	
+	// Private instance variable for paddle
+	private GRect paddle;
+	
+	
 /** Runs the Breakout program. */
 	public void run() {
 		gameSetup();
 		
-		// Temporary Label
-		label = new GLabel("Hello World", getWidth()-200, getHeight()-200);
-		add(label);
+
 		
 		// Must call this method to be able to get mouse events 
 		addMouseListeners(); 
@@ -109,7 +111,7 @@ public class Breakout extends GraphicsProgram {
 		int paddleX = getWidth()/2 - PADDLE_WIDTH/2;
 		int paddleY = getHeight()-PADDLE_HEIGHT-PADDLE_Y_OFFSET;
 		
-		GRect paddle = new GRect(paddleX, paddleY,PADDLE_WIDTH, PADDLE_HEIGHT );
+		paddle = new GRect(paddleX, paddleY,PADDLE_WIDTH, PADDLE_HEIGHT );
 		paddle.setFilled(true);
 		paddle.setColor(Color.GRAY);
 		add(paddle);
@@ -126,8 +128,9 @@ public class Breakout extends GraphicsProgram {
 	
 	// This method is called everytime user moves mouse 
 	public void mouseMoved(MouseEvent e) { 
-		label.setLabel("Mouse: (" + e.getX() + ", " + e.getY() + ")"); 
+		
 	 }
 	
-	private GLabel label;
+	
+
 }
