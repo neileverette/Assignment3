@@ -9,8 +9,6 @@ import acm.graphics.*;
 import java.awt.event.*; 
  
 public class MouseTracker extends GraphicsProgram { 
- 
- private int circleRadius);
 
 public void run() { 
 	 
@@ -32,7 +30,7 @@ public void run() {
  // This method is called everytime user moves mouse 
  public void mouseMoved(MouseEvent e) { 
 	 label.setLabel("Mouse: (" + e.getX() + ", " + e.getY() + ")"); 
-	 circle.setLocation((e.getX()-circleRadius) , e.getY());
+	 circle.setLocation(e.getX()-circle.getWidth(), e.getY());
  } 
  
  /* Private instance variable */ 
