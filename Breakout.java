@@ -133,7 +133,7 @@ public class Breakout extends GraphicsProgram {
 	
 	// This method creates the ball
 	private void createBall(){
-		ball = new GOval (getWidth()/2,getWidth()/2,BALL_RADIUS*2,BALL_RADIUS*2);
+		ball = new GOval (getWidth()/2-BALL_RADIUS,getWidth()/2,BALL_RADIUS*2,BALL_RADIUS*2);
 		ball.setFilled(true);
 		ball.setColor(Color.BLACK);
 		add(ball);
