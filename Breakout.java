@@ -61,6 +61,9 @@ public class Breakout extends GraphicsProgram {
 	// Private instance variable for paddle
 	private GRect paddle;
 	
+	// Private instance variable for ball
+	private GOval ball;
+	
 	
 /** Runs the Breakout program. */
 	public void run() {
@@ -74,6 +77,7 @@ public class Breakout extends GraphicsProgram {
 	private void gameSetup(){
 		createBricks();
 		createPaddle();
+		createBall();
 	}
 	
 	// Loads the Bricks
@@ -118,7 +122,6 @@ public class Breakout extends GraphicsProgram {
 		addMouseListeners(); 
 	}
  	
-	
 	// This method is called everytime user moves mouse 
 	public void mouseMoved(MouseEvent e) { 
 		
@@ -128,6 +131,12 @@ public class Breakout extends GraphicsProgram {
 			
 	 }
 	
-	
+	// This method creates the ball
+	private void createBall(){
+		ball = new GOval (getWidth()/2,getWidth()/2,BALL_RADIUS*2,BALL_RADIUS*2);
+		ball.setFilled(true);
+		ball.setColor(Color.BLACK);
+		add(ball);
+	}
 
 }
