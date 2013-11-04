@@ -44,7 +44,7 @@ public class BouncingBall extends GraphicsProgram{
 	
 	private void checkForCollision(){
 		if(ball.getY() > getHeight()-DIAM_BALL){
-			yVel = -yVel;
+			yVel = -yVel * BOUNCE_REDUCE;
 		}
 	}
 }
