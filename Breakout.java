@@ -69,8 +69,6 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		gameSetup();
 		
-		
-		
 	}
 	
 	// Sets up the game
