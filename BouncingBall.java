@@ -12,7 +12,7 @@ public class BouncingBall extends GraphicsProgram{
 	private static final double X_START = DIAM_BALL;
 	private static final double Y_START = 100;
 	private static final double X_VEL=5;
-	private static final double BOUNCE_REDUCE = 0.9;
+	private static final double BOUNCE_REDUCE = 0.95;
 	
 	private double xVel = X_VEL;
 	private double yVel = 0.0;
