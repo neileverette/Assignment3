@@ -25,14 +25,18 @@ public class BouncingBall extends GraphicsProgram{
 	}
 
 	private void animateBall(){
+		
+		double velocity = VELOCITY;
+		
 		while(bouncingBall.getX() < getWidth()-2*BALL_RADIUS){
-			moveBall();
+			moveBall(velocity);
 			pause(10);
+			velocity = .9*velocity;
 			
 		}
 	}
 	
-	private void moveBall(){
-		bouncingBall.setLocation(bouncingBall.getX() + .9*VELOCITY, bouncingBall.getY());
+	private void moveBall(double x){
+		bouncingBall.setLocation(bouncingBall.getX() + x, bouncingBall.getY());
 	}
 }
