@@ -8,7 +8,7 @@ public class BouncingBall extends GraphicsProgram{
 	
 	private static final int DIAM_BALL = 30;
 	private static final double GRAVITY = 3;
-	private static final double DELAY = 50;
+	private static final double DELAY = 40;
 	private static final double X_START = DIAM_BALL;
 	private static final double Y_START = 100;
 	private static final double X_VEL=5;
