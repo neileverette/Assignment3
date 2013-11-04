@@ -37,6 +37,8 @@ public class BouncingBall extends GraphicsProgram{
 	}
 
 	private void moveBall(){
+		yVel += GRAVITY;
+		ball.move(xVel,yVel);
 
 	}
 	
