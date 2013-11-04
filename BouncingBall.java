@@ -26,7 +26,7 @@ public class BouncingBall extends GraphicsProgram{
 	private void animateBall(){
 		while(bouncingBall.getX() < getWidth()){
 			moveBall();
-			pause(100);
+			pause(10);
 			
 		}
 	}
