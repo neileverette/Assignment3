@@ -25,7 +25,7 @@ public class BouncingBall extends GraphicsProgram{
 		
 		while(bouncingBall.getX() < getWidth()){
 			moveBall();
-			checkForCollision();
+	//		checkForCollision();
 			pause(DELAY);
 			
 		}	
