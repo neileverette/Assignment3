@@ -12,8 +12,8 @@ public class BouncingBall extends GraphicsProgram{
 	private GOval bouncingBall;
 	
 	public void run(){
-		createBall(-BALL_RADIUS,100);
-		animateBall();
+		createBall(BALL_RADIUS,100);
+		
 		
 	}
 	
