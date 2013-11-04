@@ -12,6 +12,7 @@ public class BouncingBall extends GraphicsProgram{
 	
 	public void run(){
 		createBall(-BALL_RADIUS,100);
+		animateBall();
 		
 	}
 	
@@ -22,4 +23,15 @@ public class BouncingBall extends GraphicsProgram{
 		add(bouncingBall);
 	}
 
+	private void animateBall(){
+		while(bouncingBall.getX() < getWidth()){
+			moveBall();
+			pause(100);
+			
+		}
+	}
+	
+	private void moveBall(){
+		bouncingBall.setLocation(bouncingBall.getX()+1, bouncingBall.getY());
+	}
 }
