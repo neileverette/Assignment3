@@ -45,8 +45,8 @@ public class BouncingBall extends GraphicsProgram{
 		if(ball.getY() > getHeight()-DIAM_BALL){
 			yVel = -yVel * BOUNCE_REDUCE;
 			
-			double diff = ball.getY() - (getHeight()-DIAM_BALL);
-			ball.move(0,-2 * diff);
+			//double diff = ball.getY() - (getHeight()-DIAM_BALL);
+			//ball.move(0,-2 * diff);
 		}
 	}
 }
