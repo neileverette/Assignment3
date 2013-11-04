@@ -11,7 +11,7 @@ public class BouncingBall extends GraphicsProgram{
 	private static final double GRAVITY = 3;
 	private static final double DELAY = 50;
 	private static final double X_START = BALL_RADIUS/2;
-	private static final double Y_START = 100;
+	private static final double Y_START = 10;
 	
 	private GOval bouncingBall;
 	
