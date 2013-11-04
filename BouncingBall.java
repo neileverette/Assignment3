@@ -7,7 +7,7 @@ import acm.program.GraphicsProgram;
 public class BouncingBall extends GraphicsProgram{
 	
 	private static final int BALL_RADIUS = 20;
-	private static final double VELOCITY = 100;
+	private static final double VELOCITY = 50;
 	
 	private GOval bouncingBall;
 	
