@@ -42,7 +42,7 @@ public class BouncingBall extends GraphicsProgram{
 	}
 	
 	private void checkForCollision(){
-		if(ball.getY() > getHeight()-DIAM_BALL){
+		if(ball.getY() > getHeight()-DIAM_BALL || ball.getX() < getWidth() - DIAM_BALL){
 			yVel = -yVel * BOUNCE_REDUCE;
 			
 			double diff = ball.getY() - (getHeight()-DIAM_BALL);
