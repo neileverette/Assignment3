@@ -7,6 +7,7 @@ import acm.program.GraphicsProgram;
 public class BouncingBall extends GraphicsProgram{
 	
 	private static final int BALL_RADIUS = 20;
+	private static final double VELOCITY = 3;
 	
 	private GOval bouncingBall;
 	
@@ -32,6 +33,6 @@ public class BouncingBall extends GraphicsProgram{
 	}
 	
 	private void moveBall(){
-		bouncingBall.setLocation(bouncingBall.getX()+1, bouncingBall.getY());
+		bouncingBall.setLocation(bouncingBall.getX() + .9*VELOCITY, bouncingBall.getY());
 	}
 }
