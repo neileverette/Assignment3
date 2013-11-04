@@ -10,15 +10,25 @@ public class BouncingBall extends GraphicsProgram{
 	private static final double VELOCITY = 33;
 	private static final double GRAVITY = 3;
 	private static final double DELAY = 50;
-	private static final double X_START = -BALL_RADIUS;
+	private static final double X_START = BALL_RADIUS;
 	private static final double Y_START = 10;
+	private static final double X_VEL=5;
+	private static final double BOUNCE_REDUCE = 0.9;
+	
+	private double xVel = X_VEL;
+	private double yVel = 0.0;
 	
 	private GOval bouncingBall;
 	
 	public void run(){
 		createBall(X_START,Y_START);
 		
-		
+		while(bouncingBall.getX() < getWidth()){
+			moveBall();
+//			checkForCollsion();
+			pause(DELAY);
+			
+		}	
 	}
 	
 	private void createBall(double x, double y){
@@ -28,19 +38,12 @@ public class BouncingBall extends GraphicsProgram{
 		add(bouncingBall);
 	}
 
-	private void animateBall(){
-		
-		double velocity = VELOCITY;
-		
-		while(bouncingBall.getX() < getWidth()-2*BALL_RADIUS){
-			moveBall(velocity);
-			pause(10);
-			velocity = .95*velocity;
-			
-		}
+	private void moveBall(){
+		yVel += GRAVITY;
+		bouncingBall.move(X_VEL, yVel);
 	}
 	
-	private void moveBall(double x){
-		bouncingBall.setLocation(bouncingBall.getX() + x, bouncingBall.getY());
+	private void checkForCollision(){
+		
 	}
 }
