@@ -11,7 +11,7 @@ public class BouncingBall extends GraphicsProgram{
 	private GOval bouncingBall;
 	
 	public void run(){
-		createBall(100,100);
+		createBall(0,100);
 		
 	}
 	
