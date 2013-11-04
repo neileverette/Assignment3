@@ -8,16 +8,20 @@ public class BouncingBall extends GraphicsProgram{
 	
 	private static final int BALL_RADIUS = 20;
 	private static final double VELOCITY = 33;
+	private static final double GRAVITY = 3;
+	private static final double DELAY = 50;
+	private static final double X_START = BALL_RADIUS/2;
+	private static final double Y_START = 100;
 	
 	private GOval bouncingBall;
 	
 	public void run(){
-		createBall(BALL_RADIUS,100);
+		createBall(X_START,Y_START);
 		
 		
 	}
 	
-	private void createBall(int x, int y){
+	private void createBall(double x, double y){
 		bouncingBall = new GOval(x,y, 2*BALL_RADIUS,2*BALL_RADIUS);
 		bouncingBall.setFilled(true);
 		bouncingBall.setColor(Color.BLACK);
