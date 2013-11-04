@@ -25,7 +25,7 @@ public class BouncingBall extends GraphicsProgram{
 		
 		while(bouncingBall.getX() < getWidth()){
 			moveBall();
-//			checkForCollsion();
+			checkForCollision();
 			pause(DELAY);
 			
 		}	
@@ -44,6 +44,9 @@ public class BouncingBall extends GraphicsProgram{
 	}
 	
 	private void checkForCollision(){
+		if (bouncingBall.getY() > getHeight() - 2*BALL_RADIUS);{
+			yVel = -yVel*BOUNCE_REDUCE;
+		}
 		
 	}
 }
