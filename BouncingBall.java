@@ -31,7 +31,7 @@ public class BouncingBall extends GraphicsProgram{
 		while(bouncingBall.getX() < getWidth()-2*BALL_RADIUS){
 			moveBall(velocity);
 			pause(10);
-			velocity = .9*velocity;
+			velocity = .95*velocity;
 			
 		}
 	}
