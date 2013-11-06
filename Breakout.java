@@ -56,6 +56,9 @@ public class Breakout extends GraphicsProgram {
 
 /** Number of turns */
 	private static final int NTURNS = 3;
+	
+/** Paddle Speed */
+	private static final double PADDLE_SPEED = 5;
 
 	
 	// Private instance variable for paddle
@@ -127,11 +130,11 @@ public class Breakout extends GraphicsProgram {
 	public void keyPressed(KeyEvent e) {
 	    if (e.getKeyCode() == KeyEvent.VK_RIGHT ) {
 	        // Right Arrow key   
-	    	paddle.setLocation(paddle.getX()+1, paddle.getY());
+	    	paddle.setLocation(paddle.getX() + PADDLE_SPEED, paddle.getY());
 	    	
 	    } else if (e.getKeyCode() == KeyEvent.VK_LEFT ) {
 	        //Left arrow key
-	    	paddle.setLocation(paddle.getX()+1, paddle.getY());
+	    	paddle.setLocation(paddle.getX() - PADDLE_SPEED, paddle.getY());
 	    }  
 	}
 	
