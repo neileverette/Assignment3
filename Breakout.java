@@ -69,7 +69,9 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		gameSetup();
 		
-	}
+		// Listener for mouse
+		addMouseListeners();
+		}
 	
 	// Sets up the game
 	private void gameSetup(){
@@ -120,8 +122,15 @@ public class Breakout extends GraphicsProgram {
 		addMouseListeners(); 
 	}
  	
+	// Arrow Paddle
+	private void paddle(){
+		
+		addKeyListener();
+		
+	}
+	
 	// This method is called everytime user moves mouse 
-	public void mouseMoved(MouseEvent e) { 
+ 	public void mouseMoved(MouseEvent e) { 
 		
 		if(e.getX() < getWidth()-PADDLE_WIDTH/2 && e.getX() > PADDLE_WIDTH/2){
 			paddle.setLocation(e.getX()-PADDLE_WIDTH/2, paddle.getY());
