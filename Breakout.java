@@ -71,6 +71,9 @@ public class Breakout extends GraphicsProgram {
 		
 		// Listener for mouse
 		addMouseListeners();
+		
+		// Listener for keyboard events
+		addKeyListeners();
 		}
 	
 	// Sets up the game
@@ -117,15 +120,13 @@ public class Breakout extends GraphicsProgram {
 		paddle.setFilled(true);
 		paddle.setColor(Color.GRAY);
 		add(paddle);
-		
-		// Must call this method to be able to get mouse events 
-		addMouseListeners(); 
+
 	}
  	
 	// Arrow Paddle
-	private void paddle(){
+	private void movePaddle(){
 		
-		addKeyListener();
+		
 		
 	}
 	
