@@ -127,17 +127,13 @@ public class Breakout extends GraphicsProgram {
 	public void keyPressed(KeyEvent e) {
 	    if (e.getKeyCode() == KeyEvent.VK_RIGHT ) {
 	            
-	    	paddle.setLocation(getX()+5, getY());
+	    	paddle.setLocation(paddle.getX()+5, paddle.getY());
 	    	
 	    } else if (e.getKeyCode() == KeyEvent.VK_LEFT ) {
 	            //Left arrow key code
 	    } else if (e.getKeyCode() == KeyEvent.VK_UP ) {
 	            //Up arrow key code
-	    } else if (e.getKeyCode() == KeyEvent.VK_DOWN ) {
-	            //Down arrow key code
-	    }
-
-	    repaint();
+	    }  
 	}
 	
 /*	// This method is called everytime user moves mouse 
@@ -149,6 +145,7 @@ public class Breakout extends GraphicsProgram {
 			
 	 }
 */	
+	
 	// This method creates the ball
 	private void createBall(){
 		ball = new GOval (getWidth()/2-BALL_RADIUS,getWidth()/2,BALL_RADIUS*2,BALL_RADIUS*2);
