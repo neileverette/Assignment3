@@ -124,10 +124,14 @@ public class Breakout extends GraphicsProgram {
 	}
  	
 	// Arrow Paddle
-	private void movePaddle(){
+	private void keyPressed(KeyEvent e){
 		
+//		while(keyPressed()){
 		
-		
+			if (e.getKeyCode()==39){
+			}else if(e.getKeyCode()==37){
+//			}
+		}
 	}
 	
 	// This method is called everytime user moves mouse 
