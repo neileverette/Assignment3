@@ -126,13 +126,12 @@ public class Breakout extends GraphicsProgram {
 	// Arrow Paddle
 	public void keyPressed(KeyEvent e) {
 	    if (e.getKeyCode() == KeyEvent.VK_RIGHT ) {
-	            
-	    	paddle.setLocation(paddle.getX()+5, paddle.getY());
+	        // Right Arrow key   
+	    	paddle.setLocation(paddle.getX()+1, paddle.getY());
 	    	
 	    } else if (e.getKeyCode() == KeyEvent.VK_LEFT ) {
-	            //Left arrow key code
-	    } else if (e.getKeyCode() == KeyEvent.VK_UP ) {
-	            //Up arrow key code
+	        //Left arrow key
+	    	paddle.setLocation(paddle.getX()+1, paddle.getY());
 	    }  
 	}
 	
