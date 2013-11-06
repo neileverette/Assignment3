@@ -124,14 +124,20 @@ public class Breakout extends GraphicsProgram {
 	}
  	
 	// Arrow Paddle
-	private void keyPressed(KeyEvent e){
-		
-//		while(keyPressed()){
-		
-			if (e.getKeyCode()==39){
-			}else if(e.getKeyCode()==37){
-//			}
-		}
+	public void keyPressed(KeyEvent e) {
+	    if (e.getKeyCode() == KeyEvent.VK_RIGHT ) {
+	            
+	    	paddle.setLocation(getX()+5, getY());
+	    	
+	    } else if (e.getKeyCode() == KeyEvent.VK_LEFT ) {
+	            //Left arrow key code
+	    } else if (e.getKeyCode() == KeyEvent.VK_UP ) {
+	            //Up arrow key code
+	    } else if (e.getKeyCode() == KeyEvent.VK_DOWN ) {
+	            //Down arrow key code
+	    }
+
+	    repaint();
 	}
 	
 	// This method is called everytime user moves mouse 
