@@ -70,13 +70,14 @@ public class Breakout extends GraphicsProgram {
 	
 /** Runs the Breakout program. */
 	public void run() {
-		gameSetup();
+		// Listener for keyboard events
+		addKeyListeners();
 		
 		// Listener for mouse
 		addMouseListeners();
 		
-		// Listener for keyboard events
-		addKeyListeners();
+		gameSetup();
+		
 		}
 	
 	// Sets up the game
