@@ -139,7 +139,7 @@ public class Breakout extends GraphicsProgram {
 	    }  
 	}
 	
-/*	// This method is called everytime user moves mouse 
+	// This method is called everytime user moves mouse 
  	public void mouseMoved(MouseEvent e) { 
 		
 		if(e.getX() < getWidth()-PADDLE_WIDTH/2 && e.getX() > PADDLE_WIDTH/2){
@@ -147,7 +147,7 @@ public class Breakout extends GraphicsProgram {
 		}
 			
 	 }
-*/	
+
 	
 	// This method creates the ball
 	private void createBall(){
