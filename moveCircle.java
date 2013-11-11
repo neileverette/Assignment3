@@ -11,6 +11,7 @@ public class moveCircle extends GraphicsProgram{
 	
 	// Instance variable
 	createBall newBall = new createBall(X_DIMIN,Y_DIMIN, DIAM, DIAM);
+	add(newBall);
 	
 	public void run(){
 		
