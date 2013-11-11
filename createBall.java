@@ -12,7 +12,7 @@ public class createBall {
 		this.xPos = xPos;
 		this.yPos = yPos;
 		
-		ball = new GOval(x,y,xPos,yPos);
+		GOval ball = new GOval(x,y,xPos,yPos);
 		ball.setFilled(true);
 		ball.setColor(Color.BLACK);
 		add(ball);
