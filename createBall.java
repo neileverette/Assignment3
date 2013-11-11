@@ -8,6 +8,7 @@ public class createBall {
 		this.yPos = yPos;
 		
 	}
+
 	
 	private double x;
 	private double y;
