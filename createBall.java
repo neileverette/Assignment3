@@ -1,3 +1,8 @@
+import java.awt.Color;
+import acm.graphics.*;
+
+import acm.graphics.GOval;
+
 
 public class createBall {
 	
@@ -7,6 +12,11 @@ public class createBall {
 		this.xPos = xPos;
 		this.yPos = yPos;
 		
+		ball = new GOval(x,y,xPos,yPos);
+		ball.setFilled(true);
+		ball.setColor(Color.BLACK);
+		add(ball);
+		return ball;		
 	}
 
 	
@@ -14,5 +24,6 @@ public class createBall {
 	private double y;
 	private double xPos;
 	private double yPos;
+	private GRect ball;
 
 }
