@@ -5,12 +5,11 @@ import acm.graphics.*;
 
 
 public class createBall {
-	
+
 	private double x;
 	private double y;
 	private double d;
-	private GOval ball;
-	
+	private GOval ball;	
 
 	private GOval createBall(double x, double y, double d){
 		this.x = x;
@@ -22,8 +21,4 @@ public class createBall {
 		ball.setFillColor(Color.BLACK);
 		return ball;
 	}
-
-	
-
-
 }
