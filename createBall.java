@@ -11,7 +11,8 @@ public class createBall {
 	private double d;
 	private GOval ball;	
 
-	private GOval createBall(double x, double y, double d){
+
+	public GOval createBall(double x, double y, double d){
 		this.x = x;
 		this.y = y;
 		this.d = d;
