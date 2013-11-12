@@ -6,23 +6,24 @@ import acm.graphics.*;
 
 public class createBall {
 	
-	public GOval createBall(double x, double y, double xPos, double yPos){
+	private double x;
+	private double y;
+	private double d;
+	private GOval ball;
+	
+
+	private GOval createBall(double x, double y, double d){
 		this.x = x;
 		this.y = y;
-		this.xPos = xPos;
-		this.yPos = yPos;
+		this.d = d;
 		
-		GOval ball = new GOval(x,y,xPos,yPos);
+		ball = new GOval(x,y,d,d);
 		ball.setFilled(true);
-		ball.setColor(Color.BLACK);
-		return(ball);
+		ball.setFillColor(Color.BLACK);
+		return ball;
 	}
 
 	
-	private double x;
-	private double y;
-	private double xPos;
-	private double yPos;
-	private GRect ball;
+
 
 }
