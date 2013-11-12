@@ -20,6 +20,4 @@ public class moveCircle extends GraphicsProgram{
 		
 	}
 	
-
-
 }
