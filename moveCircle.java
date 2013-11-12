@@ -10,11 +10,15 @@ public class moveCircle extends GraphicsProgram{
 	private static final double Y_DIMIN = 0 + DIAM/2;
 	
 	// Instance variable
-	createBall newBall = new createBall(X_DIMIN,Y_DIMIN, DIAM, DIAM);
-	add(newBall);
+	private GOval ball;
 	
 	public void run(){
 		
+		
+	}
+	
+	private GOval createBall(double x, double y, double d, double d){
+		ball = new GOval(x,y,d,d);
 	}
 
 }
