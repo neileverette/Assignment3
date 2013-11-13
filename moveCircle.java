@@ -20,7 +20,7 @@ public class moveCircle extends GraphicsProgram{
 	}
 	
 	private void createBall(){
-		ball = new GOval(X_DIMIN, Y_DIMIM, DIAM, DIAM);
+		ball = new GOval(X_DIMIN, Y_DIMIN, DIAM, DIAM);
 		ball.setFilled(true);
 		ball.setColor(Color.BLACK);
 		add(ball);
