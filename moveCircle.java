@@ -11,10 +11,11 @@ public class moveCircle extends GraphicsProgram{
 	private static final double X_DIMIN = 0 + DIAM/2;
 	private static final double Y_DIMIN = 0 + DIAM/2;
 	
-
+	
+	
 	public void run(){
 		
-		createBall ball = new createBall(X_DIMIN, Y_DIMIN, DIAM);
+		
 	}
 	
 }
