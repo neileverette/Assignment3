@@ -15,16 +15,15 @@ public class moveCircle extends GraphicsProgram{
 	
 	public void run(){
 		
-
-		
+		createBall(X_DIMIN, Y_DIMIN, DIAM);
 		
 	}
 	
-	private void createBall(int x, int y, int d){
+	private void createBall(double x, double y, double d){
 		ball = new GOval(x,y,d,d);
 		ball.setFilled(true);
 		ball.setColor(Color.BLACK);
-		add(add);
+		add(ball);
 		
 	}
 	
