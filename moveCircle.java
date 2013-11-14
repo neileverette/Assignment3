@@ -11,7 +11,7 @@ public class moveCircle extends GraphicsProgram{
 	private static final double X_DIMIN = 0 + DIAM/2;
 	private static final double Y_DIMIN = 0 + DIAM/2;
 	
-	private GOval ball;
+//	private GOval ball;
 	
 	public void run(){
 		
@@ -20,7 +20,7 @@ public class moveCircle extends GraphicsProgram{
 	}
 	
 	private void createBall(double x, double y, double d){
-		ball = new GOval(x, y, d, d);
+		GOval ball = new GOval(x, y, d, d);
 		ball.setFilled(true);
 		ball.setColor(Color.BLACK);
 		add(ball);	
