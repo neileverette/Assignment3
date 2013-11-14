@@ -23,8 +23,8 @@ public class moveCircle extends GraphicsProgram{
 		ball = new GOval(x, y, d, d);
 		ball.setFilled(true);
 		ball.setColor(Color.BLACK);
-		add(ball);
-		
+		add(ball);	
 	}
+	
 	
 }
