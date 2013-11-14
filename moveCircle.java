@@ -19,8 +19,8 @@ public class moveCircle extends GraphicsProgram{
 		
 	}
 	
-	private void createBall(){
-		ball = new GOval(X_DIMIN, Y_DIMIN, DIAM, DIAM);
+	private void createBall(double x, double y, double d){
+		ball = new GOval(x, y, d, d);
 		ball.setFilled(true);
 		ball.setColor(Color.BLACK);
 		add(ball);
