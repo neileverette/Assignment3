@@ -17,7 +17,7 @@ public class moveCircle extends GraphicsProgram{
 	public void run(){
 		
 		createBall();
-		makeBall(200,100,30);
+		makeBall(X_DIMIN,100,30);
 		
 	}
 	
@@ -29,7 +29,7 @@ public class moveCircle extends GraphicsProgram{
 		add(ball);
 	}
 	
-	public GOval makeBall(int x, int y, int r){
+	public GOval makeBall(double x, double y, double r){
 		GOval circle = new GOval(x,y,r,r);
 		circle.setFilled(true);
 		circle.setColor(Color.RED);
