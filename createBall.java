@@ -7,11 +7,10 @@ import acm.graphics.*;
 public class createBall {
 	
 	// Takes no parameters
-	public GOval createBall(){
+	public createBall(){
 		GOval newCircle = new GOval(100, 200, 30,30);
 		newCircle.setFilled(true);
 		newCircle.setFillColor(Color.YELLOW);
-		return newCircle;
 	}
 
 }
