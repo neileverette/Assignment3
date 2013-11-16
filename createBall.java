@@ -11,8 +11,8 @@ public class createBall extends GraphicsProgram{
 	public createBall(double x, double y){
 		newCircle = new GOval(x, y);
 		newCircle.setFilled(true);
-		newCircle.setFillColor(Color.YELLOW);
-		add(newCircle);
+		newCircle.setFillColor(Color.BLACK);
+		add(newCircle,50,50);
 	}
 
 }
