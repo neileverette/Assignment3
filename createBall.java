@@ -11,7 +11,7 @@ public class createBall extends GCompound {
 		newCircle = new GOval(r, r);
 		newCircle.setFilled(true);
 		newCircle.setFillColor(Color.YELLOW);
-		add(newCircle,0,0);
+		add(newCircle);
 	}
 
 	private GOval newCircle;
