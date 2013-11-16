@@ -12,7 +12,7 @@ public class createBall extends GraphicsProgram{
 		newCircle = new GOval(r, r);
 		newCircle.setFilled(true);
 		newCircle.setFillColor(Color.BLACK);
-		add(newCircle,200,250);
+		add(newCircle,0,0);
 	}
 
 }
