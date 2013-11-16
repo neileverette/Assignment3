@@ -19,7 +19,8 @@ public class moveCircle extends GraphicsProgram{
 		createCircle();
 		makeBall(X_DIMIN,100,30);
 		
-		createBall newBall = new createBall();
+		createBall newBall = new createBall(100, 200, 30, 30);
+
 		
 	}
 	
