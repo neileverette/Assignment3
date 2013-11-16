@@ -11,7 +11,7 @@ public class createBall extends GraphicsProgram{
 	
 	// Takes no parameters
 	public createBall(){
-		newCircle = new GOval(100, 200, 30,30);
+		newCircle = new GOval(100, 300, 30,30);
 		add(newCircle);
 	}
 
