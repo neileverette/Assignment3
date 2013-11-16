@@ -8,9 +8,15 @@ public class createBall {
 	
 	// this method takes no parameters
 	public createBall(){
-		GOval newCircle = new GOval(50,200,30,30);
+
+	}
+	
+	private GOval newCircle(double x, double y, double r){
+		GOval newCircle = new GOval(x,y,r,r);
 		newCircle.setFilled(true);
-		newCircle.setColor(Color.YELLOW);
+		newCircle.setFillColor(Color.YELLOW);
+		return newCircle;
+
 	}
 
 }
