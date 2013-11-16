@@ -7,7 +7,7 @@ public class createBall extends GCompound {
 	
 
 	// Takes no parameters
-	public createBall(double x, double y, double r){
+	public createBall(double r){
 		newCircle = new GOval(r, r);
 		newCircle.setFilled(true);
 		newCircle.setFillColor(Color.YELLOW);
