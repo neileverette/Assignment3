@@ -16,19 +16,20 @@ public class moveCircle extends GraphicsProgram{
 	
 	public void run(){
 		
-		createBall();
+		createCircle();
 		makeBall(X_DIMIN,100,30);
 		
 	}
 	
-	// This method creates the ball
-	private void createBall(){
+	// Method that uses an instance variable
+	private void createCircle(){
 		ball = new GOval (X_DIMIN, Y_DIMIN, DIAM, DIAM);
 		ball.setFilled(true);
 		ball.setColor(Color.BLACK);
 		add(ball);
 	}
 	
+	// Method that returns a GObject
 	public GOval makeBall(double x, double y, double r){
 		GOval circle = new GOval(x,y,r,r);
 		circle.setFilled(true);
