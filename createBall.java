@@ -15,7 +15,7 @@ public class createBall {
 		GOval newCircle = new GOval(x,y,r,r);
 		newCircle.setFilled(true);
 		newCircle.setFillColor(Color.YELLOW);
-		//return newCircle;
+		return newCircle;
 
 	}
 
