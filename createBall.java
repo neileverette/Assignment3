@@ -3,7 +3,7 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 
-public class createBall extends GraphicsProgram{
+public class createBall extends GCompound {
 	
 
 	// Takes no parameters
