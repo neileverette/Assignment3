@@ -5,15 +5,12 @@ import acm.graphics.*;
 
 
 public class createBall {
-	 
-	private GOval newCircle; 
-	
+
 	
 	// Takes no parameters
 	public createBall(){
-		newCircle = new GOval(100, 200, 30,30);
-		newCircle.setFilled(true);
-		newCircle.setFillColor(Color.YELLOW);
+		GOval newCircle = new GOval(100, 200, 30,30);
+		add(newCircle);
 	}
 
 }
