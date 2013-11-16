@@ -5,7 +5,7 @@ import acm.program.GraphicsProgram;
 //import acm.graphics.GOval;
 
 
-public class createBall extends GraphicsProgram{
+public class createBall{
 	
 	private GOval newCircle;
 	
@@ -14,7 +14,7 @@ public class createBall extends GraphicsProgram{
 		newCircle = new GOval(100, 300, 30,30);
 		newCircle.setFilled(true);
 		newCircle.setFillColor(Color.YELLOW);
-		add(newCircle);
+//		add(newCircle);
 	}
 
 }
