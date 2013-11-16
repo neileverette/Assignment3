@@ -17,6 +17,7 @@ public class moveCircle extends GraphicsProgram{
 	public void run(){
 		
 		createBall();
+		makeBall(200,100,30);
 		
 	}
 	
@@ -26,5 +27,14 @@ public class moveCircle extends GraphicsProgram{
 		ball.setFilled(true);
 		ball.setColor(Color.BLACK);
 		add(ball);
+	}
+	
+	public GOval filledCircle(int x, int y, int r){
+		GOval circle = new GOval(x,y,r,r);
+		circle.setFilled(true);
+		circle.setColor(Color.RED);
+		add(circle);
+		return circle;
+	
 	}
 }
