@@ -8,11 +8,11 @@ public class createBall extends GraphicsProgram{
 	private GOval newCircle;
 	
 	// Takes no parameters
-	public createBall(double x, double y){
-		newCircle = new GOval(x, y);
+	public createBall(double r){
+		newCircle = new GOval(r, r);
 		newCircle.setFilled(true);
 		newCircle.setFillColor(Color.BLACK);
-		add(newCircle,50,50);
+		add(newCircle,200,250);
 	}
 
 }
