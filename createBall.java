@@ -7,7 +7,7 @@ import acm.program.GraphicsProgram;
 
 public class createBall extends GraphicsProgram{
 	
-	private GOval newCircle ;
+	private GOval newCircle;
 	
 	// Takes no parameters
 	public createBall(){
