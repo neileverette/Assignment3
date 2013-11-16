@@ -6,7 +6,7 @@ public class GFace extends GCompound {
 
  public GFace(double width, double height) { 
 	 head = new GOval(width, height); 
-	 add(head, 0, 0); 
+	 add(head, 100, 100); 
  }
  
  /* Private instance variables */ 
