@@ -1,10 +1,11 @@
 import java.awt.Color;
 import acm.graphics.*;
+import acm.program.GraphicsProgram;
 
 //import acm.graphics.GOval;
 
 
-public class createBall {
+public class createBall extends GraphicsProgram{
 	
 	private GOval newCircle ;
 	
