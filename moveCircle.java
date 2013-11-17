@@ -34,7 +34,7 @@ public class moveCircle extends GraphicsProgram{
 		ball4 = new createBall(300,200,30,Color.ORANGE);
 		add(ball4);
 		
-		mouseBall = new createBall(400,200,30,Color.GRAY);
+		mouseBall = new createBall();
 		add(mouseBall);
 		
 		addMouseListeners();
