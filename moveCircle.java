@@ -58,6 +58,6 @@ public class moveCircle extends GraphicsProgram{
 	}
 	
 	public void mouseMoved(MouseEvent e){
-		mouseBall.setLocation(e.getX(), e.getY());
+		mouseBall.setLocation(e.getX()-15, e.getY()-15);
 	}
 }
