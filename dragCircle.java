@@ -21,7 +21,6 @@ public class dragCircle extends GraphicsProgram{
 		ball1 = new makeBall("A", 30);
 		ball1.setColor(Color.BLACK);
 		add(ball1, 100, 100);
-		
 	}
 	
 	private void trackMouse(){
