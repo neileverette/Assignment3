@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class dragCircle extends GraphicsProgram{
 	
-	private static final int NUM_CIRCLES = 10;
+	private static final int NUM_CIRCLES = 5;
 	
 	// Instance variables
 	private GLabel label;
