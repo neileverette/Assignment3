@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class dragCircle extends GraphicsProgram{
 	
-	private static final int BALLS = 1;
+	private static final int NUM_CIRCLES = 10;
 	
 	// Instance variables
 	private GLabel label;
@@ -15,20 +15,44 @@ public class dragCircle extends GraphicsProgram{
 	
 	public void init(){
 		
-		// Variables
-		double y = rgen.nextDouble(0, 10);
-		int r = rgen.nextInt(5, 50);
-		int x = rgen.nextInt(0, 10);
+		// Create one static circle called from an outside class
+		createCircle();
 		
-		createCircles();
+		createRandomCircles();
+		
+		// Create a label that tracks the mouse
 		trackMouse();
+				
 		addMouseListeners();
 	}
 	
-	private void createCircles(){
+	private GOval randomCircle(int x, int y, int r, Color color){ 
+		GOval circle = new GOval(x,y,2*r,2*r);
+		circle.setFilled(true);
+		circle.setColor(color);
+		return circle;
+	}
+	
+	private void createCircle(){
 		ball1 = new makeBall("A", 30);
 		ball1.setColor(Color.BLACK);
 		add(ball1, 100, 100);
+	}
+	
+	private void createRandomCircles(){
+		
+		// Create random Circles
+		for (int i = 0; i < NUM_CIRCLES; i++){
+			
+			// Variables
+			int r = rgen.nextInt(5, 50);
+			
+			int x = rgen.nextInt(0, getWidth()- 2*r);
+			int y = rgen.nextInt(0, getHeight()- 2*r);
+			
+			add(randomCircle(x, y, r, rgen.nextColor()));
+		}
+		
 	}
 	
 	private void trackMouse(){
