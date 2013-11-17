@@ -14,7 +14,7 @@ public class createBall extends GCompound {
 		label.setFont("Helvetica-20");
 	
 		add(newCircle);
-		add(label, newCircle.getWidth()/2 - label.getWidth()/2, newCircle.getHeight()/2 + label.getDescent()/2()/2);
+		add(label, newCircle.getWidth()/2 - label.getWidth()/2, newCircle.getHeight()/2 + label.getDescent()/2);
 	}
 
 	public createBall(){
