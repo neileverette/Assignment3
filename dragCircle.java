@@ -48,7 +48,6 @@ public class dragCircle extends GraphicsProgram{
 			
 			add(randomCircle(x, y, r, rgen.nextColor()));
 		}
-		
 	}
 	
 	private void trackMouse(){
