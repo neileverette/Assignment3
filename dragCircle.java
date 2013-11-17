@@ -21,7 +21,7 @@ public class dragCircle extends GraphicsProgram{
 	
 	private void trackMouse(){
 		GLabel label = new GLabel("no mouse detected");
-		label.setFont("Helvetica - 18");
+		label.setFont("Helvetica-20"); 
 		add(label);
 		
 	}
