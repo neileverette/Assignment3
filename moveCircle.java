@@ -19,12 +19,15 @@ public class moveCircle extends GraphicsProgram{
 	
 	public void init(){
 		
+		// Creates a circle from the external class with no parameters
 		createCircle();
 		makeBall(X_DIMIN,100,30);
 		
+		// Creates a circle from the external class that takes one parameter
 		createBall ball = new createBall(50);
 		add(ball, X_DIMIN, 200);	
 		
+		// Creates a circle from external class with no instance variable
 		createBall ball2 = new createBall();
 		add(ball2, X_DIMIN, 300);	
 		
