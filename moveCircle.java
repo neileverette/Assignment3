@@ -17,7 +17,7 @@ public class moveCircle extends GraphicsProgram{
 	private GOval mouseBall;
 	
 	
-	public void run(){
+	public void init(){
 		
 		createCircle();
 		makeBall(X_DIMIN,100,30);
