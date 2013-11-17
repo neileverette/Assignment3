@@ -15,12 +15,8 @@ public class dragCircle extends GraphicsProgram{
 	
 	public void init(){
 		
-		// Create one static circle called from an outside class
 		createCircle();
-		
 		createRandomCircles();
-		
-		// Create a label that tracks the mouse
 		trackMouse();
 				
 		addMouseListeners();
