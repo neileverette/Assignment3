@@ -11,7 +11,7 @@ public class moveCircle extends GraphicsProgram{
 	private static final double Y_DIMIN = DIAM/2;
 	
 	private GOval ball;
-	private static ;
+	private createBall ball3;
 	
 	
 	public void run(){
