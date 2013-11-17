@@ -7,6 +7,8 @@ public class makeBall extends GCompound{
 	
 	public makeBall (String name, double r){
 		newCircle = new GOval(r, r);
+		newCircle.setFilled(true);
+		newCircle.setColor(Color.DARK_GRAY);
 		
 		GLabel label = new GLabel("name");
 		label.setFont("Helvetica-20");
