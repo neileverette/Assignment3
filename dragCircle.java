@@ -7,6 +7,7 @@ public class dragCircle extends GraphicsProgram{
 	
 	// Instance variables
 	private GLabel label;
+	private makeBall ball1;
 	
 	public void init(){
 		createCircles();
@@ -15,7 +16,7 @@ public class dragCircle extends GraphicsProgram{
 	}
 	
 	private void createCircles(){
-		
+		ball1 = new makeBall("A", 30);
 	}
 	
 	private void trackMouse(){
