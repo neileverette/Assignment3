@@ -62,7 +62,6 @@ public class dragCircle extends GraphicsProgram{
 	public void mouseMoved(MouseEvent e){
 		label.setLocation(getWidth()/2 - label.getWidth()/2, label.getHeight());
 		label.setLabel(e.getX() + " " + e.getY());
-		
 	}
 	
 	public void mousePressed(MouseEvent e){
@@ -75,6 +74,14 @@ public class dragCircle extends GraphicsProgram{
 	
 	public void mouseReleased(MouseEvent e){
 		gobj.setColor(lastColor);
+	}
+	
+	public void mouseDragged(MouseEvent e){
+	
+		if (gobj != null){
+			gobj.move(e.getX() - last.getX(), e.getY() - last.getY());
+			last = new GPoint(e.getPoint());
+		}
 	}
 	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
