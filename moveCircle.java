@@ -81,6 +81,7 @@ public class moveCircle extends GraphicsProgram{
 		}
 	}
 	
+	private GLabel label;
 	private GObject gobj;
 	private GPoint last;
 }
