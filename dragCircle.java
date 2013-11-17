@@ -26,10 +26,8 @@ public class dragCircle extends GraphicsProgram{
 
 	public void mouseMoved(MouseEvent e){
 		label.setLocation(getWidth()/2 - label.getWidth()/2, label.getHeight());
-		
-		while (e != null){
 		label.setLabel(e.getX() + " " + e.getY());
-		}
+		
 	}
 
 }
