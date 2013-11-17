@@ -68,6 +68,10 @@ public class moveCircle extends GraphicsProgram{
 		mouseBall.setColor(Color.RED);
 	}
 	
+	public void mouseReleased(MouseEvent e){
+		mouseBall.setColor(Color.BLACK);
+	}
+	
 	private GObject gobj;
 	private GPoint last;
 }
