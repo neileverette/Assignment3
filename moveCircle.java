@@ -29,7 +29,7 @@ public class moveCircle extends GraphicsProgram{
 		ball3 = new createBall(70);
 		add(ball3, 200, 200);
 		
-		ball4 = new createBall(200,200,30,Color.ORANGE);
+		ball4 = new createBall(300,200,30,Color.ORANGE);
 		add(ball4);
 	}
 	
