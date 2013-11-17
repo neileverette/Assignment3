@@ -12,6 +12,9 @@ public class dragCircle extends GraphicsProgram{
 	// Instance variables
 	private GLabel label;
 	private makeBall ball1;
+	private GPoint last;
+	private GObject gobj;
+	private String color;
 	
 	public void init(){
 		
@@ -59,6 +62,17 @@ public class dragCircle extends GraphicsProgram{
 	public void mouseMoved(MouseEvent e){
 		label.setLocation(getWidth()/2 - label.getWidth()/2, label.getHeight());
 		label.setLabel(e.getX() + " " + e.getY());
+		
+	}
+	
+	public void mousePressed(MouseEvent e){
+		last = new GPoint(e.getPoint());
+		gobj = getElementAt(last);
+		gobj.setColor(Color.RED);
+		gobj.sendToFront();
+	}
+	
+	public void mouseReleased(MouseEvent e){
 		
 	}
 	
