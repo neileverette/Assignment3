@@ -1,6 +1,8 @@
 import java.awt.Color;
 import acm.graphics.*;
 import acm.program.*;
+import acm.util.RandomGenerator;
+
 import java.awt.event.*;
 
 public class dragCircle extends GraphicsProgram{
@@ -12,6 +14,12 @@ public class dragCircle extends GraphicsProgram{
 	private makeBall ball1;
 	
 	public void init(){
+		
+		// Variables
+		double y = rgen.nextDouble(0, 10);
+		int r = rgen.nextInt(5, 50);
+		int x = rgen.nextInt(0, 10);
+		
 		createCircles();
 		trackMouse();
 		addMouseListeners();
@@ -34,5 +42,6 @@ public class dragCircle extends GraphicsProgram{
 		label.setLabel(e.getX() + " " + e.getY());
 		
 	}
-
+	
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 }
