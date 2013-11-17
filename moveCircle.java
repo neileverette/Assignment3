@@ -11,6 +11,7 @@ public class moveCircle extends GraphicsProgram{
 	private static final double Y_DIMIN = DIAM/2;
 	
 	private GOval ball;
+	private static ;
 	
 	
 	public void run(){
@@ -22,7 +23,10 @@ public class moveCircle extends GraphicsProgram{
 		add(ball, X_DIMIN, 200);	
 		
 		createBall ball2 = new createBall();
-		add(ball2, X_DIMIN, 300);			
+		add(ball2, X_DIMIN, 300);	
+		
+		ball3 = new createBall(70);
+		add(ball3, X_DIMIN, 200);
 	}
 	
 	// Method that uses an instance variable
