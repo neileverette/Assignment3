@@ -74,7 +74,7 @@ public class dragCircle extends GraphicsProgram{
 	}
 	
 	public void mouseReleased(MouseEvent e){
-		
+		gobj.setColor(lastColor);
 	}
 	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
