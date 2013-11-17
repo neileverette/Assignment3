@@ -40,7 +40,7 @@ public class moveCircle extends GraphicsProgram{
 		add(mouseBall);
 		
 		label = new GLabel(""); 
-		label.setFont("Times New Roman-36"); 
+		label.setFont("Helvetica-20"); 
 		add(label, 50, 50); 
 		
 		addMouseListeners();
