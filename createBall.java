@@ -12,7 +12,7 @@ public class createBall extends GCompound {
 		
 		GLabel label = new GLabel("A");
 		label.setFont("Helvetica-20");
-		add(label);
+		add(label, 15,15);
 		
 		add(newCircle);
 	}
