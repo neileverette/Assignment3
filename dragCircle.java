@@ -14,7 +14,7 @@ public class dragCircle extends GraphicsProgram{
 	private makeBall ball1;
 	private GPoint last;
 	private GObject gobj;
-	private String color;
+	private Color lastColor;
 	
 	public void init(){
 		
@@ -68,6 +68,7 @@ public class dragCircle extends GraphicsProgram{
 	public void mousePressed(MouseEvent e){
 		last = new GPoint(e.getPoint());
 		gobj = getElementAt(last);
+		lastColor = gobj.getColor();
 		gobj.setColor(Color.RED);
 		gobj.sendToFront();
 	}
