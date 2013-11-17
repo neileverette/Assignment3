@@ -13,6 +13,7 @@ public class moveCircle extends GraphicsProgram{
 	private GOval ball;
 	private createBall ball3;
 	private createBall ball4;
+	private createBall mouseBall;
 	
 	
 	public void run(){
@@ -31,6 +32,9 @@ public class moveCircle extends GraphicsProgram{
 		
 		ball4 = new createBall(300,200,30,Color.ORANGE);
 		add(ball4);
+		
+		mouseBall = new createBall(400,200,30,Color.GRAY);
+		add(mouseBall);
 	}
 	
 	// Method that uses an instance variable
