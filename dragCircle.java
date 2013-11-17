@@ -5,6 +5,8 @@ import java.awt.event.*;
 
 public class dragCircle extends GraphicsProgram{
 	
+	private static final int BALLS = 1;
+	
 	// Instance variables
 	private GLabel label;
 	private makeBall ball1;
@@ -17,6 +19,8 @@ public class dragCircle extends GraphicsProgram{
 	
 	private void createCircles(){
 		ball1 = new makeBall("A", 30);
+		add(ball1, 100, 100);
+		
 	}
 	
 	private void trackMouse(){
