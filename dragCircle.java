@@ -11,7 +11,6 @@ public class dragCircle extends GraphicsProgram{
 	public void init(){
 		createCircles();
 		trackMouse();
-		
 		addMouseListeners();
 	}
 	
