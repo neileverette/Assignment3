@@ -65,4 +65,7 @@ public class moveCircle extends GraphicsProgram{
 		last = new GPoint(e.getPoint());
 		gobj = getElementAt(last);
 	}
+	
+	private GObject gobj;
+	private GPoint last;
 }
