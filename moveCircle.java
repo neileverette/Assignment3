@@ -1,6 +1,7 @@
 import java.awt.Color;
 import acm.graphics.*;
 import acm.program.*;
+import java.awt.event.*;
 
 
 public class moveCircle extends GraphicsProgram{
@@ -35,6 +36,8 @@ public class moveCircle extends GraphicsProgram{
 		
 		mouseBall = new createBall(400,200,30,Color.GRAY);
 		add(mouseBall);
+		
+		addMouseListeners();
 	}
 	
 	// Method that uses an instance variable
