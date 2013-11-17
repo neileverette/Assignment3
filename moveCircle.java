@@ -55,6 +55,9 @@ public class moveCircle extends GraphicsProgram{
 		circle.setColor(Color.RED);
 		add(circle);
 		return circle;
+	}
 	
+	public void mouseMoved(MouseEvent e){
+		mouseBall.setLocation(e.getX(), e.getY());
 	}
 }
