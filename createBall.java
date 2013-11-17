@@ -14,8 +14,8 @@ public class createBall extends GCompound {
 
 	public createBall(){
 		newCircle = new GOval(30, 30);
-		newCircle.setFilled(true);
-		newCircle.setFillColor(Color.CYAN);
+		//newCircle.setFilled(true);
+		//newCircle.setFillColor(Color.CYAN);
 		add(newCircle);
 	}
 	
