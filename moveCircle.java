@@ -19,9 +19,10 @@ public class moveCircle extends GraphicsProgram{
 		makeBall(X_DIMIN,100,30);
 		
 		createBall ball = new createBall(30);
-		add(ball, X_DIMIN, 200);
-
+		add(ball, X_DIMIN, 200);	
 		
+		createBall ball2 = new createBall();
+		add(ball2, X_DIMIN, 300);			
 	}
 	
 	// Method that uses an instance variable
