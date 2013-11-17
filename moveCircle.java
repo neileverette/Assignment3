@@ -14,7 +14,7 @@ public class moveCircle extends GraphicsProgram{
 	private GOval ball;
 	private createBall ball3;
 	private createBall ball4;
-	private createBall mouseBall;
+	private GOval mouseBall;
 	
 	
 	public void run(){
@@ -34,7 +34,7 @@ public class moveCircle extends GraphicsProgram{
 		ball4 = new createBall(300,200,30,Color.ORANGE);
 		add(ball4);
 		
-		GOval mouseBall = new GOval(100,100,30,30);
+		mouseBall = new GOval(100,100,30,30);
 		mouseBall.setFilled(true);
 		mouseBall.setColor(Color.BLACK);
 		add(mouseBall);
