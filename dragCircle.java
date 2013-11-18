@@ -15,11 +15,13 @@ public class dragCircle extends GraphicsProgram{
 	private GPoint last;
 	private GObject gobj;
 	private Color lastColor;
+
 	
 	public void init(){
 		
 		createCircle();
 		createRandomCircles();
+		createRect(100,100,50);
 		trackMouse();
 				
 		addMouseListeners();
@@ -36,6 +38,13 @@ public class dragCircle extends GraphicsProgram{
 		ball1 = new makeBall("A", 30);
 		ball1.setColor(Color.BLACK);
 		add(ball1, 100, 100);
+	}
+	
+	private GRect createRect(double x, double y, double s){
+		GRect square = new GRect(x,y,s,s);
+		square.setFilled(true);
+		square.setColor(Color.GREEN);
+		add(square);
 	}
 	
 	private void createRandomCircles(){
