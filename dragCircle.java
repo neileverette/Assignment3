@@ -46,7 +46,7 @@ public class dragCircle extends GraphicsProgram{
 		square.setColor(Color.GREEN);
 		return square;
 	}
-	
+	// Method that makes random circles that appear within the window
 	private void createRandomCircles(){
 		
 		// Create random Circles
