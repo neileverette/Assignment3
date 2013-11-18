@@ -44,7 +44,7 @@ public class dragCircle extends GraphicsProgram{
 		GRect square = new GRect(x,y,s,s);
 		square.setFilled(true);
 		square.setColor(Color.GREEN);
-		add(square);
+		return square;
 	}
 	
 	private void createRandomCircles(){
