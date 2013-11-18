@@ -63,7 +63,9 @@ public class dragCircle extends GraphicsProgram{
 		label.setLocation(getWidth()/2 - label.getWidth()/2, label.getHeight());
 		
 		if(e != null){
-		label.setLabel(e.getX() + " " + e.getY());
+			label.setLabel(e.getX() + " " + e.getY());
+		}else{
+			label.setLabel("no mouse detected");
 		}
 	}
 	
