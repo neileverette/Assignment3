@@ -19,12 +19,10 @@ public class upperCase extends ConsoleProgram{
 		for(int i = 0; i < keyword.length(); i++){
 			char ch = keyword.charAt(i);
 			result += Character.toUpperCase(ch);
-			println(result);
 		}
 		
 		println(result);	
-		println(keyword);
-		
+
 	}
 
 }
