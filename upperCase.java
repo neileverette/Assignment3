@@ -3,10 +3,8 @@ import acm.program.*;
 public class upperCase extends ConsoleProgram{
 
 	public void run(){
-
 		askWord();
-
-//	
+	
 	}
 	
 	public String askWord(){
