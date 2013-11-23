@@ -14,7 +14,17 @@ public class upperCase extends ConsoleProgram{
 	}
 	
 	private void printUppercase(String keyword){
+		String result = "";
+		
+		for(int i = 0; i < keyword.length(); i++){
+			char ch = keyword.charAt(i);
+			result += Character.toUpperCase(ch);
+			println(result);
+		}
+		
+		println(result);	
 		println(keyword);
+		
 	}
 
 }
