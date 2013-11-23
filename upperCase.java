@@ -5,10 +5,11 @@ public class upperCase extends ConsoleProgram{
 	public void run(){
 
 		askWord();
-//		convertUpperCase(String word);
+		convertUpperCase(word);
+//	
 	}
 	
-	private String askWord(){
+	public String askWord(){
 		String word = readLine("Enter a word: ");
 		return word;
 	}
