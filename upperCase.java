@@ -32,7 +32,7 @@ public class upperCase extends ConsoleProgram{
 //		char ch = keyword.charAt(2);
 //		result = Character.toString(ch);
 		
-		for(int i = keyword.length()-1; i > 0; i--){
+		for(int i = keyword.length()-1; i > -1; i--){
 			char ch = keyword.charAt(i);
 			result += Character.toString(ch);			
 		}
