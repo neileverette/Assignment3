@@ -9,6 +9,6 @@ public class checkPalindrome {
 	}
 	
 	private void askKeyword(){
-		keyword = readLn("What is your word? ");
+		keyword = readLine("What is your word? ");
 	}
 }
