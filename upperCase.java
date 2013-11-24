@@ -29,8 +29,6 @@ public class upperCase extends ConsoleProgram{
 	
 	private void reverseLetters(String keyword){
 		String result = "";
-//		char ch = keyword.charAt(2);
-//		result = Character.toString(ch);
 		
 		for(int i = keyword.length()-1; i > -1; i--){
 			char ch = keyword.charAt(i);
