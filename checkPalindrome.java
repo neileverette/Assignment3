@@ -23,8 +23,8 @@ public class checkPalindrome extends ConsoleProgram{
 				return false;
 			}
 		}
-		return true;
 		println("Is a palindrone");
+		return true;
 	}
 	
 /*	private void answer(){
