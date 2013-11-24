@@ -1,15 +1,20 @@
 import acm.program.*;
 
 public class upperCase extends ConsoleProgram{
+	
+	private String keyword;
 
 	public void run(){
+		
 		askWord();
+		printUppercase(keyword);
+		//reverseWord();
 	
 	}
 	
-	public String askWord(){
+	private String askWord(){
 		String keyword = readLine("Enter a word: ");
-		printUppercase(keyword);
+		//printUppercase(keyword);
 		return keyword;
 	}
 	
@@ -20,9 +25,7 @@ public class upperCase extends ConsoleProgram{
 			char ch = keyword.charAt(i);
 			result += Character.toUpperCase(ch);
 		}
-		
 		println(result);	
-
 	}
 
 }
