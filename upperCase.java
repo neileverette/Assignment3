@@ -2,7 +2,7 @@ import acm.program.*;
 
 public class upperCase extends ConsoleProgram{
 	
-	private String keyword;
+	private String keyword = "bob";
 
 	public void run(){
 		
