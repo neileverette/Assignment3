@@ -7,6 +7,7 @@ public class checkPalindrome extends ConsoleProgram{
 	public void run(){
 		askKeyword();
 		checkWord(keyword);
+		answer();
 	}
 	
 	private String askKeyword(){
@@ -22,5 +23,13 @@ public class checkPalindrome extends ConsoleProgram{
 			}
 		}
 		return true;
+	}
+	
+	private void answer(){
+		if (checkWord()){
+			println("yes");
+		}else {
+			println("no");
+		}
 	}
 }
