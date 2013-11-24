@@ -1,6 +1,6 @@
 import acm.program.*;
 
-public class checkPalindrome {
+public class checkPalindrome extends consoleProgram{
 	
 	private String keyword;
 	
@@ -8,7 +8,8 @@ public class checkPalindrome {
 		askKeyword();
 	}
 	
-	private void askKeyword(){
-		keyword = readLine("What is your word? ");
+	private String askKeyword(){
+		keyword = readLine("Enter your word : ");
+		return keyword;
 	}
 }
