@@ -2,7 +2,7 @@ import acm.program.*;
 
 public class upperCase extends ConsoleProgram{
 	
-	private String keyword = "bob";
+	private String keyword;
 
 	public void run(){
 		
@@ -12,7 +12,7 @@ public class upperCase extends ConsoleProgram{
 	}
 	
 	private String askWord(){
-		String keyword = readLine("Enter a word: ");
+		keyword = readLine("Enter a word: ");
 		return keyword;
 	}
 	
