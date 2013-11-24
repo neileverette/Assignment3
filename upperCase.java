@@ -8,6 +8,7 @@ public class upperCase extends ConsoleProgram{
 		
 		askWord();
 		makeUpperCase(keyword);
+		reverseLetters(keyword);
 
 	}
 	
@@ -24,6 +25,17 @@ public class upperCase extends ConsoleProgram{
 			result += Character.toUpperCase(ch);
 		}
 		println(result);	
+	}
+	
+	private void reverseLetters(String keyword){
+		
+		int i = 0;
+		String result = "";
+		
+		while (i < keyword.length()){
+			result += keyword.charAt(i);
+			println(result);
+		}
 	}
 
 }
