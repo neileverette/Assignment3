@@ -27,11 +27,4 @@ public class checkPalindrome extends ConsoleProgram{
 		return true;
 	}
 	
-/*	private void answer(){
-		if (checkWord()){
-			println("yes");
-		}else {
-			println("no");
-		}
-	}*/
 }
