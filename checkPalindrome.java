@@ -6,7 +6,13 @@ public class checkPalindrome extends ConsoleProgram{
 	
 	public void run(){
 		askKeyword();
-		checkWord(keyword);
+		
+		if (checkWord(keyword) == true){
+			println("Is a palindrone");
+		}else{
+			println("Not a palindrone");
+		}
+	
 
 	}
 	
@@ -19,11 +25,9 @@ public class checkPalindrome extends ConsoleProgram{
 		
 		for (int i = 0; i < keyword.length()/2; i++){
 			if (keyword.charAt(i) != keyword.length() - (i +1)){
-				println("Not a palindrone");
 				return false;
 			}
 		}
-		println("Is a palindrone");
 		return true;
 	}
 	
