@@ -28,18 +28,13 @@ public class upperCase extends ConsoleProgram{
 	}
 	
 	private void reverseLetters(String keyword){
-		char ch = keyword.charAt(0);
-		String result = Character.toString(ch);
-		println(result);
+		String result = "";
 		
-		
-		//String result = keyword.charAt(0);
-		
-		
-//		for(int i = keyword.length(); i > 0; i--){
-//			char ch = keyword.charAt(i);
-//			println(ch);
-//		}
+		for(int i = keyword.length(); i > 0; i--){
+			char ch = keyword.charAt(i);
+			result += Character.toString(ch);
+			println(result);
+		}
 		
 	}
 
