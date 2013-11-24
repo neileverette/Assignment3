@@ -7,7 +7,8 @@ public class upperCase extends ConsoleProgram{
 	public void run(){
 		
 		askWord();
-		printUppercase(keyword);
+		printWord(keyword);
+		//printUppercase(keyword);
 		//reverseWord();
 	
 	}
@@ -16,6 +17,10 @@ public class upperCase extends ConsoleProgram{
 		String keyword = readLine("Enter a word: ");
 		//printUppercase(keyword);
 		return keyword;
+	}
+	
+	private void printWord(String keyword){
+		println(keyword);
 	}
 	
 	private void printUppercase(String keyword){
