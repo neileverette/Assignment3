@@ -27,11 +27,11 @@ public class checkPalindrome extends ConsoleProgram{
 		println("Is a palindrone");
 	}
 	
-	private void answer(){
+/*	private void answer(){
 		if (checkWord()){
 			println("yes");
 		}else {
 			println("no");
 		}
-	}
+	}*/
 }
