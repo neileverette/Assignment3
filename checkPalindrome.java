@@ -21,5 +21,6 @@ public class checkPalindrome extends ConsoleProgram{
 				return false;
 			}
 		}
-	}return true;
+		return true;
+	}
 }
