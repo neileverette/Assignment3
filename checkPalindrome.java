@@ -8,7 +8,7 @@ public class checkPalindrome extends ConsoleProgram{
 		
 		askKeyword();
 		
-		if (checkWord(keyword)){
+		if (checkWord(keyword) == true){
 			println("Is a palindrone");
 		}else{
 			println("Not a palindrone");
