@@ -5,8 +5,12 @@ public class countUppercase extends ConsoleProgram{
 	private String keyword;
 	
 	public void run(){
-		askWord();
-		checkUpperCase(keyword);
+		boolean run = true;
+		
+		while(run){
+			askWord();
+			checkUpperCase(keyword);
+		}
 	}
 	
 	public String askWord(){
