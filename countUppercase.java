@@ -15,7 +15,7 @@ public class countUppercase extends ConsoleProgram{
 	}
 	
 	public void checkUpperCase(String str){
-		private int count = 0;
+		int count = 0;
 		
 		for (int i = 0; i < str.length(); i++){
 			
