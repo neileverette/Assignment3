@@ -25,7 +25,7 @@ public class checkPalindrome extends ConsoleProgram{
 	private boolean checkWord(String keyword){
 		
 		for (int i = 0; i < keyword.length()/2; i++){
-			if (keyword.charAt(i) != keyword.charAt(i)){
+			if (keyword.charAt(i) != keyword.charAt(keyword.length()-(i+1))){
 				println("Not a palindrone");
 				return false;
 			}
