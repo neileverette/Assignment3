@@ -12,9 +12,6 @@ public class checkPalindrome extends ConsoleProgram{
 			askKeyword();
 			checkWord(keyword);
 		}
-
-	
-
 	}
 	
 	private String askKeyword(){
