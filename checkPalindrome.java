@@ -5,6 +5,7 @@ public class checkPalindrome extends ConsoleProgram{
 	private String keyword;
 	
 	public void run(){
+		
 		askKeyword();
 		
 		if (checkWord(keyword)){
