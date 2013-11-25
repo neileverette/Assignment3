@@ -6,13 +6,17 @@ public class checkPalindrome extends ConsoleProgram{
 	
 	public void run(){
 		
-		askKeyword();
+		boolean loop = true;
 		
-		if (checkWord(keyword) == true){
-			println("Is a palindrone");
-		}else{
-			println("Not a palindrone");
+		while(loop){
+			askKeyword();
 		}
+		
+//		if (checkWord(keyword) == true){
+//			println("Is a palindrone");
+//		}else{
+//			println("Not a palindrone");
+//		}
 	
 
 	}
