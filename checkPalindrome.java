@@ -10,6 +10,7 @@ public class checkPalindrome extends ConsoleProgram{
 		
 		while(loop){
 			askKeyword();
+			checkWord(keyword);
 		}
 		
 //		if (checkWord(keyword) == true){
