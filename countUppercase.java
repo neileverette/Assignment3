@@ -18,10 +18,12 @@ public class countUppercase extends ConsoleProgram{
 		int count = 0;
 		
 		for (int i = 0; i < str.length(); i++){
-			
+			char ch = keyword.charAt(i);
+			if(Character.isUpperCase(ch)){
+				count++;
+			}
 		}
-		
-		
+		println(count);
 	}
 
 }
