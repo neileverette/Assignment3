@@ -58,7 +58,7 @@ public class Breakout extends GraphicsProgram {
 	private static final int NTURNS = 3;
 	
 /** Paddle Speed */
-	private static final double PADDLE_SPEED = 10;
+	private static final double PADDLE_SPEED = 1;
 
 	
 	// Private instance variable for paddle
