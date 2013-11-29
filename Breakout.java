@@ -128,7 +128,7 @@ public class Breakout extends GraphicsProgram {
 	}
  	
 	// Arrow Paddle
-	public void keyPressed(KeyEvent e) {\
+	public void keyPressed(KeyEvent e) {
 		
 		double dx = paddle.getX();
 		double dy = paddle.getY();
