@@ -27,7 +27,7 @@ public class countUppercase extends ConsoleProgram{
 				count++;
 			}
 		}
-		println(count);
+		println("Your word has " + count + " uppercase letters");
 	}
 
 }
