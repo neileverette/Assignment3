@@ -6,10 +6,10 @@ public class replaceOccurance extends ConsoleProgram{
 		int index = str.indexOf(orig);
 		
 		if(index != -1){
-			str = str.substring(0, index)
+			str = str.substring(0, index);
 		}
 		
-		
-	}return str
+	return str;
+	}
 
 }
