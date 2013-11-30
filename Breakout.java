@@ -129,15 +129,12 @@ public class Breakout extends GraphicsProgram {
  	
 	// Arrow Paddle
 	public void keyPressed(KeyEvent e) {
-		
-		double dx = paddle.getX();
-		double dy = paddle.getY();
+
 		
 	    if (e.getKeyCode() == KeyEvent.VK_RIGHT ) {
 	        // Right Arrow key   
-	    	//paddle.setLocation(paddle.getX() + PADDLE_SPEED, paddle.getY());
-	    	dx = 5;
-	    	paddle.move(dx, dy);
+	    	paddle.setLocation(paddle.getX() + PADDLE_SPEED, paddle.getY());
+
 	    	
 	    } else if (e.getKeyCode() == KeyEvent.VK_LEFT ) {
 	        //Left arrow key
