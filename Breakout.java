@@ -67,6 +67,9 @@ public class Breakout extends GraphicsProgram {
 	// Private instance variable for ball
 	private GOval ball;
 	
+	// Private instance variable for ball velocity
+	private double vx,vy;
+	
 	
 /** Runs the Breakout program. */
 	public void run() {
