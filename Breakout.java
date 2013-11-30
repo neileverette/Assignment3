@@ -137,7 +137,7 @@ public class Breakout extends GraphicsProgram {
 	        // Right Arrow key   
 	    	//paddle.setLocation(paddle.getX() + PADDLE_SPEED, paddle.getY());
 	    	dx = dx + 1;
-	    	paddle.setLocation(dx, dy);
+	    	paddle.move(dx, dy);
 	    	
 	    } else if (e.getKeyCode() == KeyEvent.VK_LEFT ) {
 	        //Left arrow key
