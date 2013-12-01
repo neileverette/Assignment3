@@ -6,7 +6,7 @@ public class cipher extends ConsoleProgram{
 		
 		String result = "";
 		
-		for(int i=0; i < str.length; i++){
+		for(int i=0; i < str.length(); i++){
 			
 		}
 	
