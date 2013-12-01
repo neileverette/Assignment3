@@ -2,6 +2,9 @@ import acm.program.*;
 
 public class cipher extends ConsoleProgram{
 	
+	private String encrypt(String str, int i){
+		
+	}
 	
 	public void run(){
 		println("This program is a Ceasar Cipher program");
