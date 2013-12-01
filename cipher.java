@@ -2,8 +2,15 @@ import acm.program.*;
 
 public class cipher extends ConsoleProgram{
 	
-	private String encrypt(String str, int i){
+	private String encrypt(String str, int key){
 		
+		String result = "";
+		
+		for(int i=0; i < str.length; i++){
+			
+		}
+	
+		return str;
 	}
 	
 	public void run(){
