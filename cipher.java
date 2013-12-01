@@ -18,8 +18,6 @@ public class cipher extends ConsoleProgram{
 		int key = readInt("Enter your key:");
 		String plainText = readLine("Enter your message: ");
 		String cipherText = encrypt(plainText, key);
-		println("Encrypted message is:");
-		println(cipherText);
-		
+		println("Encrypted message is:" + cipherText);
 	}
 }
