@@ -3,7 +3,7 @@ import acm.program.*;
 public class cipher extends ConsoleProgram{
 	
 	private char encryptChar(char ch, int key){
-
+		return ch;
 	}
 	
 	private String encryptCaesar(String str, int key){
