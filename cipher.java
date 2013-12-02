@@ -5,6 +5,10 @@ public class cipher extends ConsoleProgram{
 	private String encryptCaesar(String str, int key){
 		String result = "";
 		
+		for(int i = 0; i < str.length(); i++){
+			char ch = str.charAt(i) ;
+		}
+		
 		return result;
 	}
 	
