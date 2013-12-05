@@ -3,8 +3,8 @@ import acm.program.*;
 public class cipher extends ConsoleProgram{
 	
 	private char encryptChar(char ch, int key){
-		char ch = (char)('A' + ((ch - 'A' + key) % 26));
-		//return ch;
+		return ((char)('A' + ((ch - 'A' + key) % 26)));
+
 	}
 	
 	private String encryptCaesar(String str, int key){
