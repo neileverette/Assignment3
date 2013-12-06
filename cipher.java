@@ -13,7 +13,7 @@ public class cipher extends ConsoleProgram{
 		String result = "";
 		
 		for(int i = 0; i < str.length(); i++){
-			char ch = str.charAt(i) ;
+			char ch = str.charAt(i);
 			result += encryptChar(ch, key);
 		}
 		
