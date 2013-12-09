@@ -91,7 +91,7 @@ public class dragCircle extends GraphicsProgram{
 	}
 	
 	public void mouseReleased(MouseEvent e){
-		//gobj.setColor(lastColor);
+		gobj.setColor(lastColor);
 		gobj.setVisible(true);
 	}
 	
