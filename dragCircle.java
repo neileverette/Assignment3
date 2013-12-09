@@ -87,7 +87,6 @@ public class dragCircle extends GraphicsProgram{
 		lastColor = gobj.getColor();
 		//gobj.setVisible(false);
 		gobj.setColor(Color.GREEN);
-		gobj.
 		gobj.sendToFront();
 	}
 	
