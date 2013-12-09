@@ -10,7 +10,6 @@ public class tokenizer extends ConsoleProgram{
 		for(int count = 0; tokenizer.hasMoreTokens(); count++){
 			println("Token # " + count + ": " + tokenizer.nextToken());
 		}
-		
 	}
 	
 	public void run(){
