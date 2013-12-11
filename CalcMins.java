@@ -9,7 +9,7 @@ public class CalcMins extends ConsoleProgram{
 		
 		int minutes = days * 24 * 60;
 		
-		println("There are " + minutes + ("in ") + days + (" days"));
+		println("There are " + minutes + (" minutes in ") + days + (" days"));
 	}
 	
 }
