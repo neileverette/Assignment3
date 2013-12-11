@@ -6,6 +6,10 @@ public class CalcMins extends ConsoleProgram{
 		println("Brooke's Minute Calculator");
 		
 		int days = readInt("How many days would you like to calculate? ");
+		
+		int minutes = days * 24 * 60;
+		
+		
 	}
 	
 }
