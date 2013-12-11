@@ -14,6 +14,13 @@ public class CalcMins extends ConsoleProgram{
 		println("There are " + seconds + (" seconds in ") + days + (" days"));
 		
 		//   There are ___ seconds in ____ days
+		
+		// abcdefghi
+		// key 3
+		// add
+		// dgg
+		// 
+		
 	}
 	
 }
