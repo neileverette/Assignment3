@@ -32,6 +32,7 @@ public class phototuner extends GraphicsProgram{
 	
 	// Instance variable for playhead
 	private GLine playhead;
+	private int playhead_X;
 	
 	
 	public void run(){
@@ -62,7 +63,8 @@ public class phototuner extends GraphicsProgram{
 	}
 	
 	private void drawPlayhead(){
-		playhead = new GLine(200, LINE_BOTTOM-50, 200, LINE_BOTTOM);
+		playhead_X = (getWidth() - PHOTO_DAYS)/2;
+		playhead = new GLine(playhead_X, LINE_BOTTOM-50, playhead_X, LINE_BOTTOM);
 		playhead.setColor(Color.red);
 		add(playhead);
 	}
