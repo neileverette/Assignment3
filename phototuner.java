@@ -24,9 +24,10 @@ public class phototuner extends GraphicsProgram{
 	
 	private void createLabel(){
 		GLabel header = new GLabel(MESSAGE);
+		header.setFont("Roboto Thin -40");
 		double x_pos = getWidth()/2 - header.getWidth()/2;
 		double y_pos = getHeight()/2 - header.getHeight()/4;
-		header.setFont("Roboto-40"); 
+		 
 		add (header, x_pos, y_pos);
 	}
 
