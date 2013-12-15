@@ -3,13 +3,12 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
 import java.awt.event.*;
-
 import java.awt.Canvas;
 import java.awt.Color;
 
 public class phototuner extends GraphicsProgram{
 	
-/** Static Variables */
+/** Final Static Variables */
 	// Sets the baseline of the bar graphic
 	private static final int LINE_BOTTOM = 300;
 	
@@ -24,9 +23,6 @@ public class phototuner extends GraphicsProgram{
 	
 	// Sets the number of "days" of the photos
 	private static final int PHOTO_DAYS = 700;
-	
-	//  Sets the intitial value of the playhead
-	private static final int PLAYHEAD_X = 200;
 	
 	//  Sets height of playhead
 	private static final int PLAYHEAD_HEIGHT = LINE_BOTTOM -40;
