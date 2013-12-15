@@ -36,6 +36,6 @@ public class phototuner extends GraphicsProgram{
 	}
 	
 	public void drawLines(){
-		line(50,P_Y,300,P_Y);
+		line(100,50,100,P_Y);
 	}
 }
