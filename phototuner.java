@@ -9,11 +9,11 @@ import java.awt.Color;
 public class phototuner extends GraphicsProgram{
 	
 	// Static Variables
-	private static final int LINE_BOTTOM = 100;
+	private static final int LINE_BOTTOM = 300;
 	private static final String MESSAGE = "Photo Tuner";
 	private static final int APP_WIDTH = 200;
 	private static final int APP_HEIGHT = 600;
-	private static final int PHOTO_DAYS = 300;
+	private static final int PHOTO_DAYS = 400;
 	
 	
 	public void run(){
@@ -45,7 +45,5 @@ public class phototuner extends GraphicsProgram{
 			line(lineX,lineTop,lineX,LINE_BOTTOM);
 			lineX++;
 		}
-		
-		
 	}
 }
