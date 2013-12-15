@@ -90,6 +90,7 @@ public class phototuner extends GraphicsProgram{
 	// This method controls the playhead of the image histogram
  	public void mouseMoved(MouseEvent e) { 		
  		//paddle.setLocation(e.getX()-PADDLE_WIDTH/2, paddle.getY());
+ 		playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
  		
 	 }
 	
