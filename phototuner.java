@@ -30,4 +30,10 @@ public class phototuner extends GraphicsProgram{
 		add (header, x_pos, y_pos);
 	}
 
+	private GLine line(double x0, double y0, double x1, double y1){
+		GLine line = new GLine(x0, y0, x1, y1);
+		return line;
+	}
+	
+	
 }
