@@ -10,8 +10,6 @@ public class phototuner extends GraphicsProgram{
 	
 	// Static Variables
 	private static final int P_Y = 100;
-	private static final int WINDOW_X = 200;
-	private static final int WINDOW_Y = 200;
 	private static final String MESSAGE = "Photo Tuner";
 	private static final int APP_WIDTH = 200;
 	private static final int APP_HEIGHT = 600;
@@ -38,6 +36,6 @@ public class phototuner extends GraphicsProgram{
 	}
 	
 	public void drawLines(){
-		line(50,50,300,300);
+		line(50,P_Y,300,P_Y);
 	}
 }
