@@ -9,13 +9,29 @@ import java.awt.Color;
 
 public class phototuner extends GraphicsProgram{
 	
-	// Static Variables
+/** Static Variables */
+	// Sets the baseline of the bar graphic
 	private static final int LINE_BOTTOM = 300;
+	
+	// Sets the page title
 	private static final String MESSAGE = "Photo Tuner";
+	
+	// Sets the app width
 	private static final int APP_WIDTH = 200;
+	
+	// Sets the app height
 	private static final int APP_HEIGHT = 600;
+	
+	// Sets the number of "days" of the photos
 	private static final int PHOTO_DAYS = 700;
+	
+	//  Sets the intitial value of the playhead
 	private static final int PLAYHEAD_X = 200;
+	
+/**Instance Variables*/
+	
+	// Instance variable for playhead
+	private GLine playhead;
 	
 	
 	public void run(){
@@ -46,9 +62,9 @@ public class phototuner extends GraphicsProgram{
 	}
 	
 	private void drawPlayhead(){
-		GLine playHead = new GLine(200, LINE_BOTTOM-50, 200, LINE_BOTTOM);
-		playHead.setColor(Color.red);
-		add(playHead);
+		playhead = new GLine(200, LINE_BOTTOM-50, 200, LINE_BOTTOM);
+		playhead.setColor(Color.red);
+		add(playead);
 		
 	}
 	
@@ -70,7 +86,8 @@ public class phototuner extends GraphicsProgram{
 
 	// This method controls the playhead of the image histogram
  	public void mouseMoved(MouseEvent e) { 		
- 		//paddle.setLocation(e.getX()-PADDLE_WIDTH/2, paddle.getY());			
+ 		//paddle.setLocation(e.getX()-PADDLE_WIDTH/2, paddle.getY());
+ 		
 	 }
 	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
