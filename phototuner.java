@@ -38,7 +38,7 @@ public class phototuner extends GraphicsProgram{
 	
 	public void drawLines(){
 		
-		double lineTop = 50;
+		double lineTop = 200;
 		double lineX = 50;
 		
 		for (int i = 0; i < PHOTO_DAYS; i++){
