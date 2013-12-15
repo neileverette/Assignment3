@@ -39,7 +39,7 @@ public class phototuner extends GraphicsProgram{
 	public void drawLines(){
 		
 		double lineTop = 200;
-		double lineX = getWidth() - PHOTO_DAYS;
+		double lineX = (getWidth() - PHOTO_DAYS)/2;
 		
 		for (int i = 0; i < PHOTO_DAYS; i++){
 			line(lineX,lineTop,lineX,LINE_BOTTOM);
