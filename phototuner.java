@@ -28,6 +28,9 @@ public class phototuner extends GraphicsProgram{
 	//  Sets the intitial value of the playhead
 	private static final int PLAYHEAD_X = 200;
 	
+//  Sets height of playhead
+	private static final int PLAYHEAD_HEIGHT = LINE_BOTTOM -40;
+	
 /**Instance Variables*/
 	
 	// Instance variable for playhead
@@ -64,7 +67,7 @@ public class phototuner extends GraphicsProgram{
 	
 	private void drawPlayhead(){
 		playhead_X = (getWidth() - PHOTO_DAYS)/2;
-		playhead = new GLine(playhead_X, LINE_BOTTOM-50, playhead_X, LINE_BOTTOM);
+		playhead = new GLine(playhead_X, PLAYHEAD_HEIGHT, playhead_X, LINE_BOTTOM);
 		playhead.setColor(Color.red);
 		add(playhead);
 	}
@@ -88,6 +91,7 @@ public class phototuner extends GraphicsProgram{
 	// This method controls the playhead of the image histogram
  	public void mouseMoved(MouseEvent e) { 		
  		//paddle.setLocation(e.getX()-PADDLE_WIDTH/2, paddle.getY());
+ //		playhead.setLocation(e.getX(), LINE_BOTTOM-50,e.getX(), LINE_BOTTOM );
  		
 	 }
 	
