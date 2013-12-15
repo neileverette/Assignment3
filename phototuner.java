@@ -13,7 +13,7 @@ public class phototuner extends GraphicsProgram{
 	private static final String MESSAGE = "Photo Tuner";
 	private static final int APP_WIDTH = 200;
 	private static final int APP_HEIGHT = 600;
-	private static final int PHOTO_DAYS = 600;
+	private static final int PHOTO_DAYS = 700;
 	
 	
 	public void run(){
