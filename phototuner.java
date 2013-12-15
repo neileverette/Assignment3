@@ -28,7 +28,7 @@ public class phototuner extends GraphicsProgram{
 	private static final int PLAYHEAD_HEIGHT = 100;
 	
 	//  Sets width of playhead
-	private static final int PLAYHEAD_WIDTH = 3;
+	private static final int PLAYHEAD_WIDTH = 2;
 	
 	//  Sets height of histogram lines
 	private static final int LINES = 35;
