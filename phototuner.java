@@ -28,8 +28,11 @@ public class phototuner extends GraphicsProgram{
 	//  Sets the intitial value of the playhead
 	private static final int PLAYHEAD_X = 200;
 	
-//  Sets height of playhead
+	//  Sets height of playhead
 	private static final int PLAYHEAD_HEIGHT = LINE_BOTTOM -40;
+	
+	//  Sets height of histogram lines
+	private static final int LINES = 40;
 	
 /**Instance Variables*/
 	
@@ -75,7 +78,7 @@ public class phototuner extends GraphicsProgram{
 	private void drawLines(){
 		
 		// Generate a random start for initial line
-		int lineTop = LINE_BOTTOM -rgen.nextInt(40);
+		int lineTop = LINE_BOTTOM -rgen.nextInt(LINES);
 		
 		// Center the line bar in the window
 		double lineX = (getWidth() - PHOTO_DAYS)/2;
@@ -84,7 +87,7 @@ public class phototuner extends GraphicsProgram{
 		for (int i = 0; i < PHOTO_DAYS; i++){
 			line(lineX,lineTop,lineX,LINE_BOTTOM);
 			lineX++;
-			lineTop = LINE_BOTTOM -rgen.nextInt(40);
+			lineTop = LINE_BOTTOM -rgen.nextInt(LINES);
 		}
 	}
 
