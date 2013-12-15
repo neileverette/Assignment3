@@ -40,13 +40,13 @@ public class phototuner extends GraphicsProgram{
 	
 	private void drawLines(){
 		
-		int lineTop = rgen.nextInt(100) + LINE_BOTTOM - 50;
+		int lineTop = rgen.nextInt(100) + LINE_BOTTOM;
 		double lineX = (getWidth() - PHOTO_DAYS)/2;
 		
 		for (int i = 0; i < PHOTO_DAYS; i++){
 			line(lineX,lineTop,lineX,LINE_BOTTOM);
 			lineX++;
-			lineTop = rgen.nextInt(100) + LINE_BOTTOM - 50;
+			lineTop = rgen.nextInt(100) + LINE_BOTTOM;
 		}
 	}
 
