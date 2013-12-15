@@ -2,6 +2,8 @@
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
+
+import java.awt.Canvas;
 import java.awt.Color;
 
 public class phototuner extends GraphicsProgram{
@@ -22,5 +24,8 @@ public class phototuner extends GraphicsProgram{
 		double x_pos = getWidth()/2 - header.getWidth()/2;
 		double y_pos = getHeight()/2 - header.getHeight()/2;
 		add (header, x_pos, y_pos);
+	}
+	
+	private void setCanvas(){
 	}
 }
