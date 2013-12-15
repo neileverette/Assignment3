@@ -65,7 +65,6 @@ public class phototuner extends GraphicsProgram{
 		playhead = new GLine(200, LINE_BOTTOM-50, 200, LINE_BOTTOM);
 		playhead.setColor(Color.red);
 		add(playhead);
-		
 	}
 	
 	private void drawLines(){
