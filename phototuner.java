@@ -65,7 +65,7 @@ public class phototuner extends GraphicsProgram{
 	
 	private void drawPlayhead(){
 		playhead_X = (getWidth() - PHOTO_DAYS)/2;
-		playhead = new GRect(playhead_X, playhead_X+3, PLAYHEAD_WIDTH, PLAYHEAD_HEIGHT);
+		playhead = new GRect(playhead_X, LINE_BOTTOM, PLAYHEAD_WIDTH, PLAYHEAD_HEIGHT);
 		playhead.setFilled(true);
 		playhead.setColor(Color.red);
 		add(playhead);
