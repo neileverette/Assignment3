@@ -74,7 +74,7 @@ public class phototuner extends GraphicsProgram{
 	private void drawLines(){
 		
 		// Generate a random start for initial line
-		int lineTop = LINE_BOTTOM -rgen.nextInt(LINES);
+		int lineTop = (int)LINE_BOTTOM -rgen.nextInt(LINES);
 		
 		// Center the line bar in the window
 		double lineX = (getWidth() - PHOTO_DAYS)/2;
@@ -90,7 +90,7 @@ public class phototuner extends GraphicsProgram{
 	// This method controls the playhead of the image histogram
  	public void mouseMoved(MouseEvent e) { 		
  		//paddle.setLocation(e.getX()-PADDLE_WIDTH/2, paddle.getY());
- 		playhead.setLocation(e.getX(), LINE_BOTTOM-50,e.getX(), LINE_BOTTOM);
+ 	//	playhead.setLocation(e.getX(), LINE_BOTTOM-50,e.getX(), LINE_BOTTOM);
  		
 	 }
 	
