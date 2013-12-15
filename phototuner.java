@@ -24,14 +24,14 @@ public class phototuner extends GraphicsProgram{
 	// Sets the number of "days" of the photos
 	private static final int PHOTO_DAYS = 700;
 	
-	//  Sets height of playhead
-	private static final int PLAYHEAD_HEIGHT = 100;
-	
 	//  Sets width of playhead
 	private static final int PLAYHEAD_WIDTH = 2;
 	
 	//  Sets height of histogram lines
 	private static final int LINES = 35;
+	
+	//  Sets height of playhead
+	private static final int PLAYHEAD_HEIGHT = LINES + 5;
 	
 /**Instance Variables*/
 	
