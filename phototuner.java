@@ -25,7 +25,8 @@ public class phototuner extends GraphicsProgram{
 	private void createLabel(){
 		GLabel header = new GLabel(MESSAGE);
 		double x_pos = getWidth()/2 - header.getWidth()/2;
-		double y_pos = getHeight()/2 - header.getHeight()/2;
+		double y_pos = getHeight()/2 - header.getHeight()/4;
+		header.setFont("Helvetica-20"); 
 		add (header, x_pos, y_pos);
 	}
 
