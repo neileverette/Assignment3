@@ -32,8 +32,8 @@ public class phototuner extends GraphicsProgram{
 
 	private GLine line(double x0, double y0, double x1, double y1){
 		GLine line = new GLine(x0, y0, x1, y1);
-		//line.setColor(rgen.nextColor());
-		line.setColor(Color.gray);
+		line.setColor(rgen.nextColor());
+		//line.setColor(Color.gray);
 		add(line);
 		return line;
 	}
