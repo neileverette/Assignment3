@@ -19,6 +19,8 @@ public class phototuner extends GraphicsProgram{
 	
 	private void createLabel(){
 		GLabel header = new GLabel(message);
-		add (header, 100, 200);
+		double x_pos = getWidth()/2 - header.getWidth();
+		double y_pos = getHeight()/2 - header.getHeight();
+		add (header, x_pos, y_pos);
 	}
 }
