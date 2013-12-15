@@ -8,18 +8,19 @@ import java.awt.Color;
 
 public class phototuner extends GraphicsProgram{
 	
-	// 
+	// Static Variables
 	private static final int P_Y = 100;
 	private static final int WINDOW_X = 200;
-	private static final int WINDOW_y = 200;
+	private static final int WINDOW_Y = 200;
 	private static final String MESSAGE = "Photo Tuner";
 	private static final int APP_WIDTH = 200;
 	private static final int APP_HEIGHT = 600;
 	
+	
 	public void run(){
-		createLabel();
-		
+		createLabel();	
 	}
+	
 	
 	private void createLabel(){
 		GLabel header = new GLabel(MESSAGE);
