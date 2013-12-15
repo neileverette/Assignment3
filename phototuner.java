@@ -47,7 +47,7 @@ public class phototuner extends GraphicsProgram{
 	
 	private void Playhead(){
 		GLine playHead = new GLine(200, 300, 150, 300);
-		add(playhead);
+		add(playHead);
 		
 	}
 	
