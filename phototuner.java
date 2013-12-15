@@ -46,6 +46,7 @@ public class phototuner extends GraphicsProgram{
 		for (int i = 0; i < PHOTO_DAYS; i++){
 			line(lineX,lineTop,lineX,LINE_BOTTOM);
 			lineX++;
+			lineTop = rgen.nextInt(100) + 100;
 		}
 	}
 
