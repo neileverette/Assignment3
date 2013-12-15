@@ -20,6 +20,5 @@ public class phototuner extends GraphicsProgram{
 	private void createLabel(){
 		GLabel header = new GLabel(message);
 		add (header, 100, 200);
-		
 	}
 }
