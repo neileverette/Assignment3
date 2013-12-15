@@ -10,7 +10,7 @@ public class phototuner extends GraphicsProgram{
 	
 /** Final Static Variables */
 	// Sets the baseline of the bar graphic
-	private static final double LINE_BOTTOM = 300;
+	private static final int LINE_BOTTOM = 300;
 	
 	// Sets the page title
 	private static final String MESSAGE = "Photo Tuner";
@@ -25,7 +25,7 @@ public class phototuner extends GraphicsProgram{
 	private static final int PHOTO_DAYS = 700;
 	
 	//  Sets height of playhead
-	private static final double PLAYHEAD_HEIGHT = LINE_BOTTOM -40;
+	private static final int PLAYHEAD_HEIGHT = LINE_BOTTOM -40;
 	
 	//  Sets height of histogram lines
 	private static final int LINES = 35;
@@ -74,7 +74,7 @@ public class phototuner extends GraphicsProgram{
 	private void drawLines(){
 		
 		// Generate a random start for initial line
-		int lineTop = (int)LINE_BOTTOM -rgen.nextInt(LINES);
+		int lineTop = LINE_BOTTOM -rgen.nextInt(LINES);
 		
 		// Center the line bar in the window
 		double lineX = (getWidth() - PHOTO_DAYS)/2;
@@ -90,7 +90,7 @@ public class phototuner extends GraphicsProgram{
 	// This method controls the playhead of the image histogram
  	public void mouseMoved(MouseEvent e) { 		
  		//paddle.setLocation(e.getX()-PADDLE_WIDTH/2, paddle.getY());
- 	//	playhead.setLocation(e.getX(), LINE_BOTTOM-50,e.getX(), LINE_BOTTOM);
+ 		playhead.setLocation(e.getX(), LINE_BOTTOM-50,e.getX(), LINE_BOTTOM));
  		
 	 }
 	
