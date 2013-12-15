@@ -18,7 +18,8 @@ public class phototuner extends GraphicsProgram{
 	
 	
 	public void run(){
-		createLabel();	
+		createLabel();
+		drawLines();
 	}
 	
 	
@@ -35,5 +36,7 @@ public class phototuner extends GraphicsProgram{
 		return line;
 	}
 	
-	
+	public void drawLines(){
+		line(50,50,300,300);
+	}
 }
