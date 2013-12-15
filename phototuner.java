@@ -40,13 +40,17 @@ public class phototuner extends GraphicsProgram{
 	
 	private void drawLines(){
 		
-		int lineTop = rgen.nextInt(100) + LINE_BOTTOM;
+		// Generate a random start for initial line
+		int lineTop = rgen.nextInt(300);
+		
+		// Center the line bar in the window
 		double lineX = (getWidth() - PHOTO_DAYS)/2;
 		
+		// Loop to draw all the lines
 		for (int i = 0; i < PHOTO_DAYS; i++){
 			line(lineX,lineTop,lineX,LINE_BOTTOM);
 			lineX++;
-			lineTop = rgen.nextInt(100) + LINE_BOTTOM;
+			lineTop = rgen.nextInt(300);
 		}
 	}
 
