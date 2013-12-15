@@ -13,6 +13,8 @@ public class phototuner extends GraphicsProgram{
 	
 	public void run(){
 		
+		println("hello world");
+		
 	}
 	
 
