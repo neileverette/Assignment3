@@ -43,14 +43,24 @@ public class phototuner extends GraphicsProgram{
 	private int playhead_X;
 	private GLabel present;
 	private GLabel oldest;
+	private GRect image_background;
 	
 	public void run(){
 		
 		addMouseListeners();// Listener for mouse
+		createBackround();
 		createLabel(); // Create the top label
 		drawLines(); // Draw the graph
 		drawPlayhead(); // Draw the playhead
 		createLabels(); // Create labels for the timeline
+		
+	}
+	
+	private void createBackground(){
+		image_background = new GRect(getWidth(), getHeight(), 0,0);
+		image_background.setFilled(true);
+		image_background.setColor(Color.red);
+		add(image_background);
 	}
 	
 	private void createLabel(){ 
