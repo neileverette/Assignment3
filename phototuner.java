@@ -48,7 +48,7 @@ public class phototuner extends GraphicsProgram{
 	public void run(){
 		
 		addMouseListeners();// Listener for mouse
-		createBackround();
+		createBackground();
 		createLabel(); // Create the top label
 		drawLines(); // Draw the graph
 		drawPlayhead(); // Draw the playhead
