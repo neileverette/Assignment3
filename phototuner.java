@@ -123,7 +123,7 @@ public class phototuner extends GraphicsProgram{
  			// Move the playhead
  			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
  			
- 			if (e.getY()>100 && e.getY()<300){
+ 			if (e.getY()>PLAYHEAD_HEIGHT && e.getY()<LINE_BOTTOM){
  				// Change Background color
  				image_background.setColor(rgen.nextColor());
  			}
