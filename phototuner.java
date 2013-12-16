@@ -118,7 +118,7 @@ public class phototuner extends GraphicsProgram{
 		add(oldest);
 	}
 	
-	// This method controls the playhead of the image histogram
+/**	// This method controls the playhead of the image histogram
  	public void mouseMoved(MouseEvent e) { 	
  		// While the mouse is within the histogram
  		if(e.getX()>(getWidth() - PHOTO_DAYS)/2 && e.getX()<(getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS){
@@ -130,8 +130,21 @@ public class phototuner extends GraphicsProgram{
  				image_background.setColor(rgen.nextColor());
  			}
  		}
-	 }
+	 }*/
 
+	// This method controls the playhead of the image histogram
+ 	public void mouseDragged(MouseEvent e) { 	
+ 		// While the mouse is within the histogram
+ 		if(e.getX()>(getWidth() - PHOTO_DAYS)/2 && e.getX()<(getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS){
+ 			
+ 			// Move the playhead
+ 			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
+ 			
+ 			if (e.getY()<LINE_BOTTOM && e.getY() > LINE_BOTTOM - LINES){
+ 				image_background.setColor(rgen.nextColor());
+ 			}
+ 		}
+	 }
  	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 }
