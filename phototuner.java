@@ -112,7 +112,7 @@ public class phototuner extends GraphicsProgram{
 		oldest = new GLabel("Oldest", (getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS, LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
 		oldest.setLocation ((getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS-oldest.getWidth(), LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
 		oldest.setFont("Helvetica-10");
-		odest.setColor(Color.white);
+		oldest.setColor(Color.white);
 		
 		add(present);
 		add(oldest);
