@@ -45,6 +45,7 @@ public class phototuner extends GraphicsProgram{
 		createLabel(); // Create the top label
 		drawLines(); // Draw the graph
 		drawPlayhead(); // Draw the playhead
+		createLabels(); // Create labels for the timeline
 	}
 	
 	private void createLabel(){
@@ -87,6 +88,11 @@ public class phototuner extends GraphicsProgram{
 		}
 	}
 
+	private void createLabels(){
+		GLabel present = new GLabel("Recent", 100, 100);
+		add(present);
+	}
+	
 	// This method controls the playhead of the image histogram
  	public void mouseMoved(MouseEvent e) { 	
  		// While the mouse is within the histogram
@@ -95,6 +101,6 @@ public class phototuner extends GraphicsProgram{
  			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
  		}
 	 }
-	
+ 	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 }
