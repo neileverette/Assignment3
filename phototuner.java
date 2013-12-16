@@ -119,6 +119,7 @@ public class phototuner extends GraphicsProgram{
  	public void mouseMoved(MouseEvent e) { 	
  		// While the mouse is within the histogram
  		if(e.getX()>(getWidth() - PHOTO_DAYS)/2 && e.getX()<(getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS){
+ 			
  			// Move the playhead
  			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
  		}
