@@ -33,6 +33,9 @@ public class phototuner extends GraphicsProgram{
 	//  Sets height of playhead
 	private static final int PLAYHEAD_HEIGHT = LINES + 3;
 	
+	//  Sets the margin of labels above the playhead 
+	private static final int LABEL_MARGIN = 5;
+	
 /**Instance Variables*/
 	
 	// Instance variable for playhead
@@ -89,7 +92,7 @@ public class phototuner extends GraphicsProgram{
 	}
 
 	private void createLabels(){
-		GLabel present = new GLabel("Most Recent", (getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM - PLAYHEAD_HEIGHT);
+		GLabel present = new GLabel("Most Recent", (getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
 		add(present);
 	}
 	
