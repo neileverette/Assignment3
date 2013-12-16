@@ -39,6 +39,9 @@ public class phototuner extends GraphicsProgram{
 	//  Sets the margin of labels above the playhead 
 	private static final int LABEL_MARGIN = 5;
 	
+//  Gives some tolerance in the drag event
+	private static final int TOLERANCE = 5;
+	
 /**Instance Variables*/
 	
 	// Instance variable for playhead
@@ -135,7 +138,7 @@ public class phototuner extends GraphicsProgram{
  			// Move the playhead
  			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
  			
- 			if (e.getY()<LINE_BOTTOM && e.getY() > LINE_BOTTOM - LINES){
+ 			if (e.getY()<LINE_BOTTOM + TOLERANCE && e.getY() > LINE_BOTTOM - LINES - TOLERANCE){
  				image_background.setColor(rgen.nextColor());
  			}
  		}
