@@ -96,7 +96,7 @@ public class phototuner extends GraphicsProgram{
 		present.setFont("Helvetica-10");
 		
 		GLabel oldest = new GLabel("Oldest", (getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS-100, LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
-		present.setFont("Helvetica-10");
+		oldest.setFont("Helvetica-10");
 		
 		add(present);
 		add(oldest);
