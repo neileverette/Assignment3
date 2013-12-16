@@ -66,6 +66,7 @@ public class phototuner extends GraphicsProgram{
 	private void createLabel(){ 
 		GLabel header = new GLabel(MESSAGE);
 		header.setFont("Helvetica-40");
+		header.setColor(Color.white);
 		double x_pos = getWidth()/2 - header.getWidth()/2;
 		double y_pos = getHeight()/5;
 		add (header, x_pos, y_pos);
