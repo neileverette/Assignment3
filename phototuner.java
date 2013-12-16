@@ -40,7 +40,7 @@ public class phototuner extends GraphicsProgram{
 	private static final int LABEL_MARGIN = 5;
 	
 //  Gives some tolerance in the drag event
-	private static final int TOLERANCE = 5;
+	private static final int TOLERANCE = 10;
 	
 /**Instance Variables*/
 	
