@@ -89,7 +89,7 @@ public class phototuner extends GraphicsProgram{
 	}
 
 	private void createLabels(){
-		GLabel present = new GLabel("Most Recent", (getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM+PLAYHEAD_HEIGHT+present.getHeight()+10);
+		GLabel present = new GLabel("Most Recent", (getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM+PLAYHEAD_HEIGHT + this.getHeight()+10);
 		add(present);
 	}
 	
