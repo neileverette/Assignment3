@@ -99,6 +99,7 @@ public class phototuner extends GraphicsProgram{
 		present.setFont("Helvetica-10");
 		
 		add(present);
+		add(oldest);
 	}
 	
 	// This method controls the playhead of the image histogram
