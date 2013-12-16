@@ -51,7 +51,6 @@ public class phototuner extends GraphicsProgram{
 		drawLines(); // Draw the graph
 		drawPlayhead(); // Draw the playhead
 		createLabels(); // Create labels for the timeline
-		canvasColor();
 	}
 	
 	private void createLabel(){ 
@@ -114,10 +113,7 @@ public class phototuner extends GraphicsProgram{
  			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
  		}
 	 }
- 	
- 	private void canvas(){
- 		
- 	}
+
  	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 }
