@@ -51,7 +51,7 @@ public class phototuner extends GraphicsProgram{
 		createLabels(); // Create labels for the timeline
 	}
 	
-	private void createLabel(){
+	private void createLabel(){ 
 		GLabel header = new GLabel(MESSAGE);
 		header.setFont("Helvetica-40");
 		double x_pos = getWidth()/2 - header.getWidth()/2;
