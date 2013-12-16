@@ -57,7 +57,7 @@ public class phototuner extends GraphicsProgram{
 	}
 	
 	private void createBackground(){
-		image_background = new GRect(getWidth(), getHeight(), 0,0);
+		image_background = new GRect(0,0,getWidth(), getHeight());
 		image_background.setFilled(true);
 		image_background.setColor(Color.red);
 		add(image_background);
