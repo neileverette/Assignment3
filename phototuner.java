@@ -122,6 +122,9 @@ public class phototuner extends GraphicsProgram{
  			
  			// Move the playhead
  			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
+ 			
+ 			// Change Background color
+ 			image_background.setColor(rgen.nextColor());
  		}
 	 }
 
