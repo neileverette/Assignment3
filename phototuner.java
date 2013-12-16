@@ -15,6 +15,9 @@ public class phototuner extends GraphicsProgram{
 	// Sets the page title
 	private static final String MESSAGE = "Photo Tuner";
 	
+	// Sets the page instruction
+	private static final String INSTRUCTION = "Drag Across the Timeline";
+	
 	// Sets the app width
 	private static final int APP_WIDTH = 200;
 	
@@ -70,6 +73,13 @@ public class phototuner extends GraphicsProgram{
 		double x_pos = getWidth()/2 - header.getWidth()/2;
 		double y_pos = getHeight()/5;
 		add (header, x_pos, y_pos);
+		
+		GLabel instruction = new GLabel(MESSAGE);
+		instruction.setFont("Helvetica-40");
+		instruction.setColor(Color.white);
+		x_pos = getWidth()/2 - instruction.getWidth()/2;
+		y_pos = getHeight()/4;
+		add (instruction, x_pos, y_pos);
 	}
 
 	private GLine line(double x0, double y0, double x1, double y1){
@@ -117,22 +127,7 @@ public class phototuner extends GraphicsProgram{
 		add(present);
 		add(oldest);
 	}
-	
-/**	// This method controls the playhead of the image histogram
- 	public void mouseMoved(MouseEvent e) { 	
- 		// While the mouse is within the histogram
- 		if(e.getX()>(getWidth() - PHOTO_DAYS)/2 && e.getX()<(getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS){
- 			
- 			// Move the playhead
- 			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
- 			
- 			if (e.getY()<LINE_BOTTOM && e.getY() > LINE_BOTTOM - LINES){
- 				image_background.setColor(rgen.nextColor());
- 			}
- 		}
-	 }*/
 
-	// This method controls the playhead of the image histogram
  	public void mouseDragged(MouseEvent e) { 	
  		// While the mouse is within the histogram
  		if(e.getX()>(getWidth() - PHOTO_DAYS)/2 && e.getX()<(getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS){
