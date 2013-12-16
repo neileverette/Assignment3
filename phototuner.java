@@ -52,13 +52,11 @@ public class phototuner extends GraphicsProgram{
 		
 		addMouseListeners();// Listener for mouse
 		createBackground();
-		createLabel(); // Create the top label
+		createLabels(); // Create the top label
 		drawLines(); // Draw the graph
 		drawPlayhead(); // Draw the playhead
-		createLabels(); // Create labels for the timeline
-		
 	}
-	
+	/** THIS SIMULATES THE BACKGROUND SWAPPING WITH PHOTOS*/
 	private void createBackground(){
 		image_background = new GRect(0,0,getWidth(), getHeight());
 		image_background.setFilled(true);
@@ -66,7 +64,8 @@ public class phototuner extends GraphicsProgram{
 		add(image_background);
 	}
 	
-	private void createLabel(){ 
+	/** CREATES ALL THE LABELS IN THE APP*/
+	private void createLabels(){ 
 		GLabel header = new GLabel(MESSAGE);
 		header.setFont("Helvetica-40");
 		header.setColor(Color.white);
@@ -80,8 +79,20 @@ public class phototuner extends GraphicsProgram{
 		x_pos = getWidth()/2 - instruction.getWidth()/2;
 		y_pos = getHeight()/4;
 		add (instruction, x_pos, y_pos);
+		
+		present = new GLabel("Most Recent", (getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
+		present.setFont("Helvetica-10");
+		present.setColor(Color.white);
+		add(present);
+		
+		oldest = new GLabel("Oldest", (getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS, LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
+		oldest.setLocation ((getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS-oldest.getWidth(), LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
+		oldest.setFont("Helvetica-10");
+		oldest.setColor(Color.white);
+		add(oldest);
 	}
 
+	/** METHOD TO CREATE A SINGLE LINE*/
 	private GLine line(double x0, double y0, double x1, double y1){
 		GLine line = new GLine(x0, y0, x1, y1);
 		//line.setColor(rgen.nextColor());
@@ -90,6 +101,7 @@ public class phototuner extends GraphicsProgram{
 		return line;
 	}
 	
+	/** DRAWS THE PLAYHEAD */
 	private void drawPlayhead(){
 		playhead_X = (getWidth() - PHOTO_DAYS)/2;
 		playhead = new GRect(playhead_X, LINE_BOTTOM - PLAYHEAD_HEIGHT , PLAYHEAD_WIDTH, PLAYHEAD_HEIGHT);
@@ -98,6 +110,7 @@ public class phototuner extends GraphicsProgram{
 		add(playhead);
 	}
 	
+	/** DRAWS ALL THE LINES IN THE HISTOGRAM */
 	private void drawLines(){
 		
 		// Generate a random start for initial line
@@ -113,21 +126,8 @@ public class phototuner extends GraphicsProgram{
 			lineTop = LINE_BOTTOM -rgen.nextInt(LINES);
 		}
 	}
-
-	private void createLabels(){
-		present = new GLabel("Most Recent", (getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
-		present.setFont("Helvetica-10");
-		present.setColor(Color.white);
-		
-		oldest = new GLabel("Oldest", (getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS, LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
-		oldest.setLocation ((getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS-oldest.getWidth(), LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
-		oldest.setFont("Helvetica-10");
-		oldest.setColor(Color.white);
-		
-		add(present);
-		add(oldest);
-	}
-
+	
+	/** DETECTS THE MOUSE BEHAVIOR TO MOVE THE PLAYHEAD*/
  	public void mouseDragged(MouseEvent e) { 	
  		// While the mouse is within the histogram
  		if(e.getX()>(getWidth() - PHOTO_DAYS)/2 && e.getX()<(getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS){
@@ -141,5 +141,6 @@ public class phototuner extends GraphicsProgram{
  		}
 	 }
  	
+ 	/** RANDOM GENERATOR OBJECT*/
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 }
