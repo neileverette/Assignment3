@@ -28,9 +28,9 @@ public class tuner_circle {
 		drawCircle();
 	}
 
-	public void drawCircle(){
+	private void drawCircle(){
 		circle = new GOval(200,200,CIRCLE_RADIUS*2,CIRCLE_RADIUS*2);
-		add(circle);
+	
 		
 		
 	}
