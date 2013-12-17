@@ -6,7 +6,14 @@ import java.awt.event.*;
 import java.awt.Canvas;
 import java.awt.Color;
 
+
+
+
 public class phototuner extends GraphicsProgram{
+	
+	public static void main(String[] args) {
+		new phototuner().start(args);
+	}
 	
 /** Final Static Variables */
 	// Sets the baseline of the bar graphic
