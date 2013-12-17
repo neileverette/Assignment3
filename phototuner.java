@@ -7,8 +7,6 @@ import java.awt.Canvas;
 import java.awt.Color;
 
 
-
-
 public class phototuner extends GraphicsProgram{
 	
 	public static void main(String[] args) {
