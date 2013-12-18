@@ -48,7 +48,7 @@ public class tuner_circle extends GraphicsProgram{
 	}
 	
 	private void drawLines(){
-		drawLine(PLAYHEAD_WIDTH, PLAYHEAD_HEIGHT, getWidth()/2-PLAYHEAD_WIDTH/2,getHeight()/2 - CIRCLE_RADIUS, Color.red);
+		drawLine(PLAYHEAD_WIDTH, PLAYHEAD_HEIGHT, getWidth()/2-PLAYHEAD_WIDTH/2,getHeight()/2 - CIRCLE_RADIUS + PLAYHEAD_HEIGHT, Color.red);
 		
 	}
 
