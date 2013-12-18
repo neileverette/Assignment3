@@ -48,7 +48,7 @@ public class tuner_circle extends GraphicsProgram{
 		add(playhead);
 	}
 	
-	private void drawGLine(int x0, int y0, int x1, int y1, Color color){
+	private void drawGLine(int x0, int y0, int x1, int y1){
 		line = new GLine(x0, y0, x1, y1);
 		add(line);
 		
