@@ -35,15 +35,15 @@ public class tuner_circle extends GraphicsProgram{
 
 	private void drawCircle(){
 		circle = new GOval(getWidth()/2-CIRCLE_RADIUS,getHeight()/2-CIRCLE_RADIUS,CIRCLE_RADIUS*2,CIRCLE_RADIUS*2);
-		circle.setFilled(true);
-		circle.setColor(Color.gray);
+		//circle.setFilled(true);
+		//circle.setColor(Color.gray);
 		add(circle);
 	}
 	
 	private void drawPlayhead(double width, double height, double x, double y, Color color){
 		line = new GRect(x, y, width, height);
-		//line.setFilled(true);
-		//line.setFillColor(color);
+		line.setFilled(true);
+		line.setFillColor(color);
 		add(line);
 	}
 	
