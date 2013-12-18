@@ -18,6 +18,9 @@ public class tuner_circle extends GraphicsProgram{
 	//  Sets height of histogram lines
 	private static final int LINES = 25;
 	
+	//  Sets height of playhead
+	private static final int PLAYHEAD_HEIGHT= LINES + 5;
+	
 	private static final int CIRCLE_RADIUS = 100;
 	
 	
@@ -45,7 +48,7 @@ public class tuner_circle extends GraphicsProgram{
 	}
 	
 	private void drawLines(){
-		drawLine(3,30, 100,100, Color.red);
+		drawLine(PLAYHEAD_WIDTH,30, 100,100, Color.red);
 		
 	}
 
