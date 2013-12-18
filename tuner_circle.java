@@ -30,7 +30,7 @@ public class tuner_circle extends GraphicsProgram{
 	
 	public void run(){
 		drawCircle();
-		drawLines();
+		drawPlayhead(PLAYHEAD_WIDTH, PLAYHEAD_HEIGHT, getWidth()/2-PLAYHEAD_WIDTH/2,getHeight()/2 - CIRCLE_RADIUS - PLAYHEAD_HEIGHT, Color.red);
 	}
 
 	private void drawCircle(){
@@ -40,15 +40,19 @@ public class tuner_circle extends GraphicsProgram{
 		add(circle);
 	}
 	
-	private void drawLine(double width, double height, double x, double y, Color color){
+	private void drawPlayhead(double width, double height, double x, double y, Color color){
 		line = new GRect(x, y, width, height);
 		line.setFilled(true);
 		line.setFillColor(color);
 		add(line);
 	}
 	
+	private void drawGLine(double x0, double y0, double x1, double y1, Color color){
+		
+	}
+	
 	private void drawLines(){
-		drawLine(PLAYHEAD_WIDTH, PLAYHEAD_HEIGHT, getWidth()/2-PLAYHEAD_WIDTH/2,getHeight()/2 - CIRCLE_RADIUS - PLAYHEAD_HEIGHT, Color.red);
+		
 		
 	}
 
