@@ -48,14 +48,14 @@ public class tuner_circle extends GraphicsProgram{
 		add(playhead);
 	}
 	
-	private void drawGLine(double x0, double y0, double x1, double y1, Color color){
+	private void drawGLine(int x0, int y0, int x1, int y1, Color color){
 		line = new GLine(x0, y0, x1, y1);
 		add(line);
 		
 	}
 	
 	private void drawLines(){
-		drawGLine((double)(getWidth()/2, (double)getHeight()/2, (double)getWidth()/2, (double)getHeight()/2 - (double)CIRCLE_RADIUS - LINES));
+		drawGLine(getWidth()/2, getHeight()/2, getWidth()/2, getHeight()/2 - CIRCLE_RADIUS - LINES )
 	}
 
 }
