@@ -55,7 +55,7 @@ public class tuner_circle extends GraphicsProgram{
 			}
 	
 	private void drawLines(){
-		//drawGLine(getWidth()/2, getHeight()/2, getWidth()/2, getHeight()/2 - CIRCLE_RADIUS - LINES);
+		drawGLine(getWidth()/2, getHeight()/2, getWidth()/2, getHeight()/2 - CIRCLE_RADIUS - LINES);
 		drawGLine(getWidth()/2, getHeight()/2, getWidth()/2 + 5, getHeight()/2 - CIRCLE_RADIUS - LINES);
 	
 	}	
