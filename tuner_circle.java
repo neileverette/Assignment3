@@ -25,7 +25,8 @@ public class tuner_circle extends GraphicsProgram{
 	
 	
 	public GOval circle;
-	public GRect line;
+	public GRect playhead;
+	public GLine line;
 	
 	
 	public void run(){
@@ -41,10 +42,10 @@ public class tuner_circle extends GraphicsProgram{
 	}
 	
 	private void drawPlayhead(double width, double height, double x, double y, Color color){
-		line = new GRect(x, y, width, height);
-		line.setFilled(true);
-		line.setFillColor(color);
-		add(line);
+		playhead = new GRect(x, y, width, height);
+		playhead.setFilled(true);
+		playhead.setFillColor(color);
+		add(playhead);
 	}
 	
 	private void drawGLine(double x0, double y0, double x1, double y1, Color color){
