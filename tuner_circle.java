@@ -36,7 +36,7 @@ public class tuner_circle extends GraphicsProgram{
 	private void drawCircle(){
 		circle = new GOval(getWidth()/2-CIRCLE_RADIUS,getHeight()/2-CIRCLE_RADIUS,CIRCLE_RADIUS*2,CIRCLE_RADIUS*2);
 		circle.setFilled(true);
-		circle.setColor(Color.red);
+		circle.setColor(Color.gray);
 		add(circle);
 	}
 	
