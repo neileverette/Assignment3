@@ -27,6 +27,7 @@ public class tuner_circle extends GraphicsProgram{
 	
 	public void run(){
 		drawCircle();
+		drawLines();
 	}
 
 	private void drawCircle(){
@@ -41,6 +42,11 @@ public class tuner_circle extends GraphicsProgram{
 		line.setFilled(true);
 		line.setFillColor(color);
 		add(line);
+	}
+	
+	private void drawLines(){
+		drawLine(3,30, 100,100, Color.red);
+		
 	}
 
 }
