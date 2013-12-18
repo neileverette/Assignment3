@@ -50,11 +50,12 @@ public class tuner_circle extends GraphicsProgram{
 	
 	private void drawGLine(double x0, double y0, double x1, double y1, Color color){
 		line = new GLine(x0, y0, x1, y1);
+		add(line);
 		
 	}
 	
 	private void drawLines(){
-		
+		drawGLine((double)(getWidth()/2, (double)getHeight()/2, (double)getWidth()/2, (double)getHeight()/2 - (double)CIRCLE_RADIUS - LINES));
 	}
 
 }
