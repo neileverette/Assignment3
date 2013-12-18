@@ -42,8 +42,8 @@ public class tuner_circle extends GraphicsProgram{
 	
 	private void drawPlayhead(double width, double height, double x, double y, Color color){
 		line = new GRect(x, y, width, height);
-		line.setFilled(true);
-		line.setFillColor(color);
+		//line.setFilled(true);
+		//line.setFillColor(color);
 		add(line);
 	}
 	
