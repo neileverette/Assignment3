@@ -82,7 +82,7 @@ public class phototuner extends GraphicsProgram{
 		add (header, x_pos, y_pos);
 		
 		GLabel instruction = new GLabel(INSTRUCTION);
-		instruction.setFont("Helvetica-20");
+		instruction.setFont("Helvetica-30");
 		instruction.setColor(Color.white);
 		x_pos = getWidth()/2 - instruction.getWidth()/2;
 		y_pos = getHeight()/4;
