@@ -59,7 +59,7 @@ public class tuner_circle extends GraphicsProgram{
 		int x2 = getWidth()/2;
 		int y2 = getHeight()/2 - CIRCLE_RADIUS - LINES;
 		
-		for (int i = 0; i<18; i++){
+		for (int i = 0; i<30; i++){
 			drawGLine(getWidth()/2, getHeight()/2, x2, y2);
 			x2+=5;
 			y2+=5;
