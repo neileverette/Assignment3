@@ -138,7 +138,7 @@ public class phototuner extends GraphicsProgram{
 	/** DETECTS THE MOUSE BEHAVIOR TO MOVE THE PLAYHEAD*/
  	public void mouseDragged(MouseEvent e) { 	
  		// While the mouse is within the histogram
- 		if(e.getX()>(getWidth() - PHOTO_DAYS)/2 && e.getX()<(getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS && e.getY()<LINE_BOTTOM){
+ 		if(e.getX()>(getWidth() - PHOTO_DAYS)/2 && e.getX()<(getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS && e.getY()<LINE_BOTTOM && getY()>LINE_BOTTOM+LINES){
  			
  			// Move the playhead
  			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
