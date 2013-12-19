@@ -82,20 +82,20 @@ public class phototuner extends GraphicsProgram{
 		add (header, x_pos, y_pos);
 		
 		GLabel instruction = new GLabel(INSTRUCTION);
-		instruction.setFont("Helvetica-30");
+		instruction.setFont("Helvetica-20");
 		instruction.setColor(Color.white);
 		x_pos = getWidth()/2 - instruction.getWidth()/2;
 		y_pos = getHeight()/4;
 		add (instruction, x_pos, y_pos);
 		
 		present = new GLabel("Most Recent", (getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
-		present.setFont("Helvetica-10");
+		present.setFont("Helvetica-15");
 		present.setColor(Color.white);
 		add(present);
 		
 		oldest = new GLabel("Oldest", (getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS, LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
 		oldest.setLocation ((getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS-oldest.getWidth(), LINE_BOTTOM - PLAYHEAD_HEIGHT - LABEL_MARGIN);
-		oldest.setFont("Helvetica-10");
+		oldest.setFont("Helvetica-15");
 		oldest.setColor(Color.white);
 		add(oldest);
 	}
