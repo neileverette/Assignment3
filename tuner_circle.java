@@ -30,7 +30,7 @@ public class tuner_circle extends GraphicsProgram{
 	
 	
 	public void run(){
-		setSize(480, 800);
+		setSize(240, 400);
 		drawCircle();
 		drawPlayhead(PLAYHEAD_WIDTH, PLAYHEAD_HEIGHT, getWidth()/2-PLAYHEAD_WIDTH/2,getHeight()/2 - CIRCLE_RADIUS - PLAYHEAD_HEIGHT, Color.red);
 		drawLines();
