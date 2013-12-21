@@ -14,7 +14,7 @@ public class scrubber extends GCompound{
 	}
 	
 	
-	public void drawRidges(double ridgeWidth, double ridgeHeight,double x, double y){
+	public scrubber(double ridgeWidth, double ridgeHeight,double x, double y){
 		
 		for(int i=0; i<getHeight(); i++){
 			drawRidge(ridgeWidth, ridgeHeight, x, y*i);
