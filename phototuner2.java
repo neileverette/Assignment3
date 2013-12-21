@@ -15,6 +15,7 @@ public class phototuner2 extends GraphicsProgram{
 	private scrubber scrubber1;
 	
 	public void run(){
+		setSize(480, 800);
 		createScrubber();
 	}
 
