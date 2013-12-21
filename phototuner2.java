@@ -11,8 +11,15 @@ public class phototuner2 extends GraphicsProgram{
 		new phototuner2().start(args);
 	}
 	
+	// Private instance variables
+	private scrubber scrubber1;
+	
 	public void run(){
-		
+		createScrubber();
 	}
 
+	private void createScrubber(){
+		
+	}
+	
 }
