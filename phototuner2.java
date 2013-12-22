@@ -11,6 +11,7 @@ public class phototuner2 extends GraphicsProgram{
 		new phototuner2().start(args);
 	}
 	
+	/*
 	// Static Variables
 	private static final int RIDGEHEIGHT = 2;
 	private static final int RIDGEGAP = 4;
@@ -19,13 +20,14 @@ public class phototuner2 extends GraphicsProgram{
 	
 	// Instance Variables
 	private GRect ridge;
-	
+	*/
 	
 	public void run(){
 		setSize(480, 800);
-		createRidges();
+		//createRidges();
 	}
-
+	
+	/*
 	public void createRidge(int y){
 		ridge = new GRect(getWidth()-this.getWidth()/2,y,getWidth()/2, RIDGEHEIGHT);
 		ridge.setFilled(true);
@@ -35,11 +37,7 @@ public class phototuner2 extends GraphicsProgram{
 	public void createRidges(){
 		for(int i=0; i<getHeight()/(RIDGEHEIGHT + RIDGEGAP);i++){
 			createRidge(i*(RIDGEHEIGHT+RIDGEGAP));
-			
-			// 0
-			// 6
-			// 12
-			
 		}
 	}
+	*/
 }
