@@ -22,7 +22,7 @@ public class phototuner2 extends GraphicsProgram{
 	}
 
 	private void createScrubber(){
-		ridge = new GRect(20, 200, 0, 200);
+		ridge = new GRect(0, 50, 300, 2);
 		ridge.setFilled(true);
 		ridge.setFillColor(Color.gray);
 		add(ridge);
