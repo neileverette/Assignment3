@@ -17,19 +17,16 @@ public class phototuner2 extends GraphicsProgram{
 	
 	// Private instance variables
 	private scrubber scrubber;
-	private GRect ridge;
+	private GLine ridge;
 	
 	
 	public void run(){
 		setSize(480, 800);
-		createScrubber();
+		createLine(0, 50, getWidth(), 50);
 	}
 
-	private void createScrubber(){
-		ridge = new GRect(0, 50, getWidth(),RIDGEHEIGHT);
-		ridge.setFilled(true);
-		ridge.setFillColor(Color.gray);
-		add(ridge);
+	private void createLine(double x0, double y0, double x1, double y1){
+
 	}
 
 	
