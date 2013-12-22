@@ -11,9 +11,17 @@ public class phototuner2 extends GraphicsProgram{
 		new phototuner2().start(args);
 	}
 	
+	// Instance Variables
+	private GRect ridge;
+	
+	
 	public void run(){
 		setSize(480, 800);
+		createRidge();
 	}
 
-		
+	public void createRidge(){
+		ridge = new GRect(100, 3, 0, 50);
+		add(ridge);
+	}
 }
