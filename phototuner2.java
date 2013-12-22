@@ -36,7 +36,7 @@ public class phototuner2 extends GraphicsProgram{
 	private void createBox(){
 		ridge2 = new GRect(100, 2, 30, 30);
 		ridge2.setFilled(true);
-		ridge2.setFillColor(Color.gray);
+		ridge2.setFillColor(Color.LIGHT_GRAY);
 		add(ridge2);
 		}
 		
