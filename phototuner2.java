@@ -22,7 +22,7 @@ public class phototuner2 extends GraphicsProgram{
 
 	private void createScrubber(){
 		scrubber = new scrubber(100, 1, 0, 1);
-		
+		add(scrubber);
 	}
 
 	
