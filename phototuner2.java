@@ -37,6 +37,7 @@ public class phototuner2 extends GraphicsProgram{
 		ridge2 = new GRect(100, 2, 30, 30);
 		ridge2.setVisible(true);
 		ridge2.setFillColor(Color.gray);
+		add(ridge2);
 		}
 		
 	}
