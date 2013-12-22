@@ -13,6 +13,9 @@ public class phototuner2 extends GraphicsProgram{
 	
 	// Static Variables
 	private static final int RIDGEHEIGHT = 2;
+	private static final int RIDGEGAP = 4;
+	
+	// ridge = 2, space = 4, total = 6, 800/
 	
 	// Instance Variables
 	private GRect ridge;
@@ -30,8 +33,8 @@ public class phototuner2 extends GraphicsProgram{
 	}
 	
 	public void createRidges(){
-		for(int i=0; i<getHeight()/10;i++){
-			createRidge(i*9);
+		for(int i=0; i<getHeight()/(RIDGEHEIGHT + RIDGEGAP);i++){
+			createRidge(i);
 		}
 	}
 }
