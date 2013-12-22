@@ -21,7 +21,7 @@ public class phototuner2 extends GraphicsProgram{
 	}
 
 	public void createRidge(){
-		ridge = new GRect(3,100, 0, 50);
+		ridge = new GRect(100,3, 0, 50);
 		add(ridge);
 	}
 }
