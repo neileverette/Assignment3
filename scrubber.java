@@ -4,21 +4,22 @@ import acm.graphics.*;
 
 public class scrubber extends GCompound{
 
-	public GRect ridge;
+	// Static Variables
+	private static final int RIDGEHEIGHT = 2;
+	private static final int RIDGEGAP = 4;
 	
-	public void drawRidge(double ridgeWidth, double ridgeHeight,double x, double y){
-		ridge = new GRect(ridgeWidth, ridgeHeight, x, y);
+	// Instance Variables
+	private GRect ridge;
+	
+	public void createRidge(int y){
+		ridge = new GRect(getWidth()-this.getWidth()/2,y,getWidth()/2, RIDGEHEIGHT);
 		ridge.setFilled(true);
-		ridge.setColor(Color.LIGHT_GRAY);
 		add(ridge);
 	}
 	
-	
-	public scrubber(double ridgeWidth, double ridgeHeight,double x, double y){
-		
-		for(int i=0; i<getHeight(); i++){
-			drawRidge(ridgeWidth, ridgeHeight, x, y*i);
+	public void createRidges(){
+		for(int i=0; i<getHeight()/(RIDGEHEIGHT + RIDGEGAP);i++){
+			createRidge(i*(RIDGEHEIGHT+RIDGEGAP));
 		}
-		
 	}
 }
