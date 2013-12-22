@@ -13,11 +13,9 @@ public class phototuner2 extends GraphicsProgram{
 	
 	// Static variables
 	private static final int RIDGEHEIGHT = 2;
-	private final int RIDGEWIDTH = getWidth();
 	private static final int RIDGESSPACING = 2;
 	
 	// Private instance variables
-	
 	private scrubber scrubber;
 	private GRect ridge;
 	
