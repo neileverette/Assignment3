@@ -16,4 +16,4 @@ public class phototuner2 extends GraphicsProgram{
 	}
 
 		
-	}
+}
