@@ -34,7 +34,7 @@ public class phototuner2 extends GraphicsProgram{
 	
 	public void createScrubber(){
 		myscrubber = new scrubber();
-		add(scrubber);
+		add(myscrubber);
 	}
 	
 	/*
