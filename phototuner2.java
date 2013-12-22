@@ -13,6 +13,7 @@ public class phototuner2 extends GraphicsProgram{
 	
 	// Private instance variables
 	private scrubber scrubber;
+	private GRect ridge;
 	
 	
 	public void run(){
@@ -21,8 +22,10 @@ public class phototuner2 extends GraphicsProgram{
 	}
 
 	private void createScrubber(){
-		scrubber = new scrubber(100, 1, 0, 1);
-		add(scrubber);
+		ridge = new GRect(getWidth(), 2, 0, 2);
+		ridge.setFilled(true);
+		ridge.setFillColor(Color.gray);
+		add(ridge);
 	}
 
 	
