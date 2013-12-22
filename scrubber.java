@@ -17,7 +17,7 @@ public class scrubber extends GCompound{
 		add(ridge);
 	}
 	
-	public void createRidges(){
+	public void scrubber(){
 		for(int i=0; i<getHeight()/(RIDGEHEIGHT + RIDGEGAP);i++){
 			createRidge(i*(RIDGEHEIGHT+RIDGEGAP));
 		}
