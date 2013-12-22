@@ -12,7 +12,8 @@ public class phototuner2 extends GraphicsProgram{
 	}
 	
 	// Private instance variables
-	private scrubber scrubber1;
+	private scrubber scrubber;
+	
 	
 	public void run(){
 		setSize(480, 800);
@@ -20,7 +21,9 @@ public class phototuner2 extends GraphicsProgram{
 	}
 
 	private void createScrubber(){
+		scrubber = new scrubber(100, 1, 0, 1);
 		
 	}
+
 	
 }
