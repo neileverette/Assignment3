@@ -16,18 +16,21 @@ public class phototuner2 extends GraphicsProgram{
 	// Static Variables
 	private static final int RIDGEHEIGHT = 2;
 	private static final int RIDGEGAP = 4;
-	
-	// ridge = 2, space = 4, total = 6, 800/
-	
+
+		
 	// Instance Variables
 	private GRect ridge;
 	*/
+	
+	// Static Variables
+	private static final int WIDTH = 480;
+	private static final int HEIGHT = 800;
 	
 	// Instance Variables
 	private scrubber myscrubber;
 	
 	public void run(){
-		setSize(480, 800);
+		setSize(WIDTH, HEIGHT);
 		
 		//createRidges();
 	}
