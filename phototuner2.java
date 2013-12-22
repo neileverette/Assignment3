@@ -26,7 +26,8 @@ public class phototuner2 extends GraphicsProgram{
 	}
 
 	private void createLine(double x0, double y0, double x1, double y1){
-
+		ridge = new GLine(x0, y0, x1, y1);
+		add(ridge);
 	}
 
 	
