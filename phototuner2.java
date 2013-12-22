@@ -12,7 +12,7 @@ public class phototuner2 extends GraphicsProgram{
 	}
 	
 	// Static Variables
-	private static final int RIDGEHEIGHT = 3;
+	private static final int RIDGEHEIGHT = 2;
 	
 	// Instance Variables
 	private GRect ridge;
