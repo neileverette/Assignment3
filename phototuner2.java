@@ -14,6 +14,7 @@ public class phototuner2 extends GraphicsProgram{
 	// Static variables
 	private static final int RIDGEHEIGHT = 2;
 	private static final int RIDGESSPACING = 2;
+	private static final double RIDGESIZE = .9;
 	
 	// Private instance variables
 	private scrubber scrubber;
@@ -22,7 +23,7 @@ public class phototuner2 extends GraphicsProgram{
 	
 	public void run(){
 		setSize(480, 800);
-		createLine(0, 50, getWidth(), 50);
+		createLine(RIDGESIZE*getWidth(), 50, getWidth(), 50);
 	}
 
 	private void createLine(double x0, double y0, double x1, double y1){
