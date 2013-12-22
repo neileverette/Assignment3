@@ -31,7 +31,7 @@ public class phototuner2 extends GraphicsProgram{
 	
 	public void createRidges(){
 		for(int i=0; i<getHeight();i++){
-			createRidge(i*4);
+			createRidge(i*10);
 		}
 	}
 }
