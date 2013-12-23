@@ -55,9 +55,8 @@ public class tuner extends GraphicsProgram{
  		if((getElementAt(e.getX(), e.getY())) != null){
  			changeBackground(Color.red);
  		}
- 		
-		
- 		
 	 }
-		
+ 	
+ 	/** RANDOM GENERATOR OBJECT*/
+	private RandomGenerator rgen = RandomGenerator.getInstance();	
 }
