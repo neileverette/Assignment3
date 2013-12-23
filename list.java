@@ -8,7 +8,7 @@ public class list extends GCompound{
 	private GRect newRidge;
 	
 	public void list(){
-		newRidge = new GRect(0,50,300, 100);
+		newRidge = new GRect(300, 100);
 		newRidge.setFilled(true);
 		newRidge.setFillColor(Color.black);
 	}
