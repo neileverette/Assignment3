@@ -41,6 +41,10 @@ public class tuner extends GraphicsProgram{
 		this.setBackground(backgroundColor);
 	}
 	
+	public void changeBackground(){
+		this.setBackground(Color color);
+	}
+	
 	public void createList(){
 		myList = new list(RIDGEHEIGHT, RIDGEWIDTH, RIDGEGAP, COLOR, listNumber);
 		add(myList, getWidth()-RIDGEWIDTH, 0);
@@ -53,7 +57,7 @@ public class tuner extends GraphicsProgram{
  	public void mouseClicked(MouseEvent e) { 	
 
  		if((getElementAt(e.getX(), e.getY())) != null){
- 			backgroundColor = Color.BLACK;
+ 			changeBackground(RED);
  		}
  		
 		
