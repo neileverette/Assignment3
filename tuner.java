@@ -34,6 +34,7 @@ public class tuner extends GraphicsProgram{
 	public void setWindow(){
 		this.setSize(WINDOWWIDTH, WINDOWHEIGHT);
 		this.createMenuBar();
+		this.setBackground(COLOR.gray);
 	}
 	
 	public void createList(){
