@@ -26,8 +26,14 @@ public class tuner extends GraphicsProgram{
 	private int listNumber = 50;
 	
 	public void run(){
-		setSize(WINDOWWIDTH, WINDOWHEIGHT);
+		
 		createList();
+		
+	}
+	
+	public void setWindow(){
+		this.setSize(WINDOWWIDTH, WINDOWHEIGHT);
+		this.createMenuBar();
 	}
 	
 	public void createList(){
