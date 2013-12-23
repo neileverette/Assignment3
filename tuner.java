@@ -50,7 +50,7 @@ public class tuner extends GraphicsProgram{
 		
 	}
 	
- 	public void mouseDragged(MouseEvent e) { 	
+ 	public void mouseClicked(MouseEvent e) { 	
 
  		if((getElementAt(e.getX(), e.getY())) != null){
  			backgroundColor = Color.BLACK;
