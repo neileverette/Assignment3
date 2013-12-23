@@ -10,7 +10,7 @@ public class list extends GCompound{
 	public list(int height, int width, Color color, int listNumber){
 		
 		for (int i=0; i<listNumber; i++){
-			newRidge = new GRect(width, height);
+			newRidge = new GRect(0, i*10, width, height);
 			newRidge.setFilled(true);
 			newRidge.setFillColor(color);
 			add(newRidge);
