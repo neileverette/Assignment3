@@ -11,7 +11,7 @@ public class list extends GCompound{
 	public list(int height, int width, Color color){
 		newRidge = new GRect(width, height);
 		newRidge.setFilled(true);
-		newRidge.setFillColor(Color.color);
+		newRidge.setFillColor(color);
 		add(newRidge);
 	}
 	
