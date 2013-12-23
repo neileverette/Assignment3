@@ -57,7 +57,7 @@ public class tuner extends GraphicsProgram{
  	public void mouseClicked(MouseEvent e) { 	
 
  		if((getElementAt(e.getX(), e.getY())) != null){
- 			changeBackground(RED);
+ 			changeBackground(Color.red);
  		}
  		
 		
