@@ -15,6 +15,7 @@ public class tuner extends GraphicsProgram{
 	// Static Variables
 	private static final int WINDOWWIDTH = 480;
 	private static final int WINDOWHEIGHT = 800;
+	private static final int RIDGEHEIGHT = 2;
 	
 	
 	// Instance Variables
