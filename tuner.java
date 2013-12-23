@@ -21,20 +21,21 @@ public class tuner extends GraphicsProgram{
 	private static final Color COLOR = Color.red;
 	
 	
+	
 	// Instance Variables
 	private list myList;
 	private int listNumber = 50;
+	private Color backgroundColor = Color.LIGHT_GRAY;
 	
 	public void run(){
 		setWindow();
 		createList();
-		
 	}
 	
 	public void setWindow(){
 		this.setSize(WINDOWWIDTH, WINDOWHEIGHT);
 		this.createMenuBar();
-		this.setBackground(COLOR.gray);
+		this.setBackground(backgroundColor);
 	}
 	
 	public void createList(){
