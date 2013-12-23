@@ -23,7 +23,7 @@ public class tuner extends GraphicsProgram{
 	
 	// Instance Variables
 	private list myList;
-	private int listHeight = 3;
+	private int listNumber = 3;
 	
 	public void run(){
 		setSize(WINDOWWIDTH, WINDOWHEIGHT);
@@ -31,7 +31,7 @@ public class tuner extends GraphicsProgram{
 	}
 	
 	public void createList(){
-		myList = new list(RIDGEHEIGHT, RIDGEWIDTH, COLOR);
+		myList = new list(RIDGEHEIGHT, RIDGEWIDTH, listNumber,COLOR);
 		add(myList, 0, 100);
 	}
 		
