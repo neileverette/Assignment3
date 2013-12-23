@@ -41,8 +41,8 @@ public class tuner extends GraphicsProgram{
 		this.setBackground(backgroundColor);
 	}
 	
-	public void changeBackground(){
-		this.setBackground(Color color);
+	public void changeBackground(Color color){
+		this.setBackground(color);
 	}
 	
 	public void createList(){
