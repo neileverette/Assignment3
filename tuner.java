@@ -15,7 +15,10 @@ public class tuner extends GraphicsProgram{
 	// Static Variables
 	private static final int WINDOWWIDTH = 480;
 	private static final int WINDOWHEIGHT = 800;
-
+	
+	
+	// Instance Variables
+	private list myList;
 	
 	public void run(){
 		setSize(WINDOWWIDTH, WINDOWHEIGHT);
