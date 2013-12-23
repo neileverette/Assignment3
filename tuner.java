@@ -8,9 +8,9 @@ import java.awt.Color;
 
 public class tuner extends GraphicsProgram{
 		
-	public static void main(String[] args) {
-		new tuner().start(args);
-	}
+//	public static void main(String[] args) {
+//		new tuner().start(args);
+//	}
 	
 	// Static Variables
 	private static final int WINDOWWIDTH = 480;
