@@ -50,11 +50,7 @@ public class tuner extends GraphicsProgram{
 		add(myList, getWidth()-RIDGEWIDTH, 0);
 	}
 	
-	public void changeBackground(){
-		
-	}
-	
- 	public void mouseClicked(MouseEvent e) { 	
+ 	public void mouseDragged(MouseEvent e) { 	
 
  		if((getElementAt(e.getX(), e.getY())) != null){
  			changeBackground(Color.red);
