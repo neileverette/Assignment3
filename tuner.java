@@ -19,7 +19,6 @@ public class tuner extends GraphicsProgram{
 	
 	// Instance Variables
 	private list myList;
-	private makeBall ball1;
 	
 	public void run(){
 		setSize(WINDOWWIDTH, WINDOWHEIGHT);
