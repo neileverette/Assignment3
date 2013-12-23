@@ -26,6 +26,8 @@ public class tuner extends GraphicsProgram{
 	private list myList;
 	private int listNumber = 50;
 	private Color backgroundColor = Color.LIGHT_GRAY;
+	private GObject gobj;
+	private GPoint last;
 	
 	public void run(){
 		addMouseListeners();// Listener for mouse
@@ -49,7 +51,13 @@ public class tuner extends GraphicsProgram{
 	}
 	
  	public void mouseDragged(MouseEvent e) { 	
- 		// While the mouse is within the histogram
+
+ 		
+ 		if((getElementAt(e.getX(), e.getY())) != null){
+ 			backgroundColor = Color.BLACK;
+ 		}
+ 		
+		
  		
 	 }
 		
