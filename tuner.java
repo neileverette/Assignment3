@@ -18,7 +18,7 @@ public class tuner extends GraphicsProgram{
 	private static final int RIDGEHEIGHT = 5;
 	private static final int RIDGEGAP = 4;
 	private static final int RIDGEWIDTH = 300;
-	private static final color 
+//	private static final color ;
 	
 	
 	// Instance Variables
