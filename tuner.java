@@ -25,7 +25,7 @@ public class tuner extends GraphicsProgram{
 	private list myList;
 	
 	public void run(){
-		setSize(WINDOWWIDTH, WINDOWHEIGHT, COLOR);
+		setSize(WINDOWWIDTH, WINDOWHEIGHT);
 		createList();
 	}
 	
