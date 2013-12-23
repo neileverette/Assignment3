@@ -46,7 +46,7 @@ public class dragCircle extends GraphicsProgram{
 	private void createCircle(){
 		ball1 = new makeBall("A", 30);
 		ball1.setColor(Color.BLACK);
-		//add(ball1, 300, 100);
+		add(ball1, 300, 100);
 	}
 	
 
