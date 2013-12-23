@@ -24,7 +24,7 @@ public class tuner extends GraphicsProgram{
 	
 	// Instance Variables
 	private list myList;
-	private int listNumber = 50;
+	private int listNumber = 70;
 	private Color backgroundColor = Color.LIGHT_GRAY;
 	private GObject gobj;
 	private GPoint last;
