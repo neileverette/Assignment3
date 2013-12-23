@@ -22,21 +22,13 @@ public class tuner extends GraphicsProgram{
 	private makeBall ball1;
 	
 	public void run(){
-//		setSize(WINDOWWIDTH, WINDOWHEIGHT);
+		setSize(WINDOWWIDTH, WINDOWHEIGHT);
 		createList();
-		createCircle();
 	}
 	
 	public void createList(){
 		myList = new list();
 		add(myList, 0, 100);
-	}
-	
-	// Creates Circle from an external class
-	private void createCircle(){
-		ball1 = new makeBall("A", 30);
-		//ball1.setColor(Color.BLACK);
-		add(ball1, 300, 100);
 	}
 		
 }
