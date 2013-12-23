@@ -23,7 +23,7 @@ public class tuner extends GraphicsProgram{
 	
 	// Instance Variables
 	private list myList;
-	private int listNumber = 3;
+	private int listNumber = 20;
 	
 	public void run(){
 		setSize(WINDOWWIDTH, WINDOWHEIGHT);
