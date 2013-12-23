@@ -29,7 +29,7 @@ public class tuner extends GraphicsProgram{
 	}
 	
 	public void createList(){
-		myList = new list(RIDGEHEIGHT);
+		myList = new list(RIDGEHEIGHT, RIDGEWIDTH);
 		add(myList, 0, 100);
 	}
 		
