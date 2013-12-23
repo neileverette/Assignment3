@@ -31,6 +31,7 @@ public class tuner extends GraphicsProgram{
 	
 	public void createList(){
 		myList = new list(RIDGEHEIGHT, RIDGEWIDTH, COLOR);
+		myList.setColor(Color.BLACK);
 		add(myList, 0, 100);
 	}
 		
