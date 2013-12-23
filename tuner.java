@@ -35,7 +35,7 @@ public class tuner extends GraphicsProgram{
 	// Creates Circle from an external class
 	private void createCircle(){
 		ball1 = new makeBall("A", 30);
-		ball1.setColor(Color.BLACK);
+		//ball1.setColor(Color.BLACK);
 		add(ball1, 300, 100);
 	}
 		
