@@ -17,7 +17,7 @@ public class tuner extends GraphicsProgram{
 	private static final int WINDOWHEIGHT = 800;
 	private static final int RIDGEHEIGHT = 4;
 	private static final int RIDGEGAP = 8;
-	private static final int RIDGEWIDTH = 300;
+	private static final int RIDGEWIDTH = 50;
 	private static final Color COLOR = Color.red;
 	
 	
