@@ -18,6 +18,7 @@ public class tuner extends GraphicsProgram{
 	private static final int RIDGEHEIGHT = 5;
 	private static final int RIDGEGAP = 4;
 	private static final int RIDGEWIDTH = 300;
+	private static final color 
 	
 	
 	// Instance Variables
@@ -29,8 +30,8 @@ public class tuner extends GraphicsProgram{
 	}
 	
 	public void createList(){
-		myList = new list(RIDGEHEIGHT, RIDGEWIDTH);
-		add(myList, 0, 100);
+		myList = new list(RIDGEHEIGHT, RIDGEWIDTH, Color color);
+		add(myList, 0, 100, red);
 	}
 		
 }
