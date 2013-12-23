@@ -15,7 +15,7 @@ public class tuner extends GraphicsProgram{
 	// Static Variables
 	private static final int WINDOWWIDTH = 480;
 	private static final int WINDOWHEIGHT = 800;
-	private static final int RIDGEHEIGHT = 5;
+	private static final int RIDGEHEIGHT = 2;
 	private static final int RIDGEGAP = 4;
 	private static final int RIDGEWIDTH = 300;
 	private static final Color COLOR = Color.red;
@@ -31,7 +31,6 @@ public class tuner extends GraphicsProgram{
 	
 	public void createList(){
 		myList = new list(RIDGEHEIGHT, RIDGEWIDTH, COLOR);
-		myList.setColor(Color.BLACK);
 		add(myList, 0, 100);
 	}
 		
