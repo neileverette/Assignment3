@@ -27,7 +27,7 @@ public class tuner extends GraphicsProgram{
 	
 	public void createList(){
 		myList = new list();
-		add(myList, 100, 100);
+		add(myList, 0, 100);
 	}
 		
 }
