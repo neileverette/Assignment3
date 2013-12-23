@@ -26,7 +26,7 @@ public class tuner extends GraphicsProgram{
 	private int listNumber = 50;
 	
 	public void run(){
-		
+		setWindow();
 		createList();
 		
 	}
