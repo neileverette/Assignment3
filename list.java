@@ -11,7 +11,6 @@ public class list extends GCompound{
 		newRidge = new GRect(300, 100);
 		newRidge.setFilled(true);
 		newRidge.setFillColor(Color.black);
-		add(newRidge);
 	}
-
+	
 }
