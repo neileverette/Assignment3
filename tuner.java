@@ -28,6 +28,7 @@ public class tuner extends GraphicsProgram{
 	private Color backgroundColor = Color.LIGHT_GRAY;
 	
 	public void run(){
+		addMouseListeners();// Listener for mouse
 		setWindow();
 		createList();
 	}
@@ -42,5 +43,18 @@ public class tuner extends GraphicsProgram{
 		myList = new list(RIDGEHEIGHT, RIDGEWIDTH, RIDGEGAP, COLOR, listNumber);
 		add(myList, getWidth()-RIDGEWIDTH, 0);
 	}
+	
+ 	public void mouseDragged(MouseEvent e) { 	
+ 		// While the mouse is within the histogram
+ 		if(e.getX()>(getWidth() - PHOTO_DAYS)/2 && e.getX()<(getWidth() - PHOTO_DAYS)/2+PHOTO_DAYS && e.getY()<LINE_BOTTOM && e.getY()>LINE_BOTTOM-LINES){
+ 			
+ 			// Move the playhead
+ 			playhead.setLocation(e.getX(), LINE_BOTTOM - PLAYHEAD_HEIGHT);
+ 			
+ 			if (e.getY()<LINE_BOTTOM + TOLERANCE && e.getY() > LINE_BOTTOM - LINES - TOLERANCE){
+ 				image_background.setColor(rgen.nextColor());
+ 			}
+ 		}
+	 }
 		
 }
