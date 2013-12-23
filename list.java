@@ -9,7 +9,7 @@ public class list extends GCompound{
 	
 	
 	public list(){
-		newRidge = new GRect(300, 100);
+		newRidge = new GRect(300, 2);
 		newRidge.setFilled(true);
 		newRidge.setFillColor(Color.black);
 		add(newRidge);
