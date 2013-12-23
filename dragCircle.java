@@ -42,6 +42,7 @@ public class dragCircle extends GraphicsProgram{
 		return square;
 	}
 	
+	// Creates Circle from an external class
 	private void createCircle(){
 		ball1 = new makeBall("A", 30);
 		ball1.setColor(Color.BLACK);
