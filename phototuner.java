@@ -137,10 +137,10 @@ public class phototuner extends GraphicsProgram{
 	}
 	
 	private GLine baseline(double x0, double y0, double x1, double y1){
-		GLine line = new GLine(x0, y0, x1, y1);
-		line.setColor(Color.black);
-		add(line);
-		return line;
+		GLine baseline = new GLine(x0, y0, x1, y1);
+		baseline.setColor(Color.black);
+		add(baseline);
+		return baseline;
 	}
 	
 	/** DETECTS THE MOUSE BEHAVIOR TO MOVE THE PLAYHEAD*/
