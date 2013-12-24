@@ -1,9 +1,6 @@
-	
-import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
 import java.awt.event.*;
-import java.awt.Canvas;
 import java.awt.Color;
 
 public class tuner extends GraphicsProgram{
@@ -20,14 +17,10 @@ public class tuner extends GraphicsProgram{
 	private static final int RIDGEWIDTH = 50;
 	private static final Color COLOR = Color.red;
 	
-	
-	
 	// Instance Variables
 	private list myList;
 	private int listNumber = 70;
 	private Color backgroundColor = Color.LIGHT_GRAY;
-	private GObject gobj;
-	private GPoint last;
 	
 	public void run(){
 		addMouseListeners();// Listener for mouse
