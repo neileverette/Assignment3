@@ -44,11 +44,8 @@ public class phototuner extends GraphicsProgram{
 	//  Sets the margin of labels above the playhead 
 	private static final int LABEL_MARGIN = 5;
 	
-	//  Gives some tolerance in the drag event
+//  Gives some tolerance in the drag event
 	private static final int TOLERANCE = 10;
-	
-	//  Thickness of the baseline
-	private static final int BASELINE = 2;
 	
 /**Instance Variables*/
 	
@@ -66,7 +63,7 @@ public class phototuner extends GraphicsProgram{
 		createLabels(); // Create the top label
 		drawLines(); // Draw the graph
 		baseline((getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM, PHOTO_DAYS+(getWidth() - PHOTO_DAYS-1)/2, LINE_BOTTOM);
-		//baseline((getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM+1, PHOTO_DAYS+(getWidth() - PHOTO_DAYS-1)/2, LINE_BOTTOM+1);
+		baseline((getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM+1, PHOTO_DAYS+(getWidth() - PHOTO_DAYS-1)/2, LINE_BOTTOM);
 		drawPlayhead(); // Draw the playhead
 	}
 	/** THIS SIMULATES THE BACKGROUND SWAPPING WITH PHOTOS*/
@@ -141,15 +138,10 @@ public class phototuner extends GraphicsProgram{
 	}
 	
 	private GLine baseline(double x0, double y0, double x1, double y1){
-		for (int i = 0; i < BASELINE; i++){
-			GLine baseline = new GLine(x0, y0, x1, y1);
-			baseline.setColor(Color.black);
-			add(baseline);
-			y0++;
-			y1++;
-			return baseline;
-		}
-		return null;
+		GLine baseline = new GLine(x0, y0, x1, y1);
+		baseline.setColor(Color.black);
+		add(baseline);
+		return baseline;
 	}
 	
 	/** DETECTS THE MOUSE BEHAVIOR TO MOVE THE PLAYHEAD*/
