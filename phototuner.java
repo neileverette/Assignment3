@@ -135,14 +135,14 @@ public class phototuner extends GraphicsProgram{
 			lineTop = LINE_BOTTOM -rgen.nextInt(LINES);
 		}
 	}
-	/** This draws the baseline under the histogram
+	//** This draws the baseline under the histogram
 	private GLine baseline(double x0, double y0, double x1, double y1){
 		GLine baseline = new GLine(x0, y0, x1, y1);
 		baseline.setColor(Color.black);
 		add(baseline);
 		return baseline;
 	}
-	*/
+	
 	
 	/** DETECTS THE MOUSE BEHAVIOR TO MOVE THE PLAYHEAD*/
  	public void mouseDragged(MouseEvent e) { 	
