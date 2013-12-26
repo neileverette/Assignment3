@@ -63,7 +63,6 @@ public class phototuner extends GraphicsProgram{
 		createLabels(); // Create the top label
 		drawLines(); // Draw the graph
 		baseline((getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM, PHOTO_DAYS+(getWidth() - PHOTO_DAYS-1)/2, LINE_BOTTOM);
-		baseline((getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM+1, PHOTO_DAYS+(getWidth() - PHOTO_DAYS-1)/2, LINE_BOTTOM);
 		drawPlayhead(); // Draw the playhead
 	}
 	/** THIS SIMULATES THE BACKGROUND SWAPPING WITH PHOTOS*/
