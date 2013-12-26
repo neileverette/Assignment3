@@ -62,7 +62,7 @@ public class phototuner extends GraphicsProgram{
 		createBackground();
 		createLabels(); // Create the top label
 		drawLines(); // Draw the graph
-//		baseline((getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM, PHOTO_DAYS+(getWidth() - PHOTO_DAYS-1)/2, LINE_BOTTOM);
+		baseline((getWidth() - PHOTO_DAYS)/2, LINE_BOTTOM, PHOTO_DAYS+(getWidth() - PHOTO_DAYS-1)/2, LINE_BOTTOM);
 		drawPlayhead(); // Draw the playhead
 	}
 	/** THIS SIMULATES THE BACKGROUND SWAPPING WITH PHOTOS*/
@@ -135,13 +135,13 @@ public class phototuner extends GraphicsProgram{
 			lineTop = LINE_BOTTOM -rgen.nextInt(LINES);
 		}
 	}
-	//** This draws the baseline under the histogram
-	//private GLine baseline(double x0, double y0, double x1, double y1){
-	//	GLine baseline = new GLine(x0, y0, x1, y1);
-	//	baseline.setColor(Color.black);
-	//	add(baseline);
-	//	return baseline;
-	//}
+	// This draws the baseline under the histogram
+	private GLine baseline(double x0, double y0, double x1, double y1){
+		GLine baseline = new GLine(x0, y0, x1, y1);
+		baseline.setColor(Color.black);
+		add(baseline);
+		return baseline;
+	}
 	
 	
 	/** DETECTS THE MOUSE BEHAVIOR TO MOVE THE PLAYHEAD*/
